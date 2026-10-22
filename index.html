@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Digital Marketing & Branding Agency | EquivoraDigital</title>
+  <title> Strategic Marketing & Branding | EquivoraDigital</title>
   <meta name="description" content="EquivoraDigital accelerates growth through strategic digital marketing, brand positioning, social media management, and high-impact campaigns."/>
   <meta name="robots" content="follow, index"/>
   <link rel="icon" type="image/x-icon" href="https://equivorasoftware.com/favicon.ico">
@@ -110,7 +110,7 @@
       color: #cbd5e1;
       text-decoration: none;
       transition: color 0.3s ease;
-      white-space: nowrap;
+      white-space: wrap;
       display: flex;
       align-items: center;
       gap: 6px;
@@ -137,7 +137,7 @@
       justify-content: space-between;
       align-items: center;
       padding: 0.8rem 3%;
-      gap: 1rem;
+      gap: 10rem;
       max-width: 1440px;
       margin: 0 auto;
     }
@@ -152,20 +152,16 @@
     .logo {
       display: flex;
       align-items: center;
-      gap: 8px;
-      font-size: 1.4rem;
-      font-weight: 800;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
+      gap: 1px;
       text-decoration: none;
       flex-shrink: 0;
     }
 
     .logo-icon {
-      width: 34px;
-      height: 34px;
+      width: 40px;
+      height: 40px;
       background: linear-gradient(135deg, #00afe9 0%, #9737e6 100%);
-      border-radius: 8px;
+      border-radius: 10px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -174,9 +170,34 @@
     }
 
     .logo-icon svg {
-      width: 20px;
-      height: 20px;
+      width: 22px;
+      height: 22px;
       fill: #060a18;
+    }
+
+    .logo-text-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-main-row {
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1.1;
+    }
+
+    .logo-tagline {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.72rem;
+      font-style: italic;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      background: linear-gradient(135deg, #00afe9 0%, #9737e6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-top: 2px;
     }
 
     .logo-equivora {
@@ -267,7 +288,7 @@
       display: block;
       color: #cbd5e1;
       font-size: 0.8rem;
-      white-space: nowrap;
+      white-space: wrap;
       transition: background 0.2s ease, color 0.2s ease;
       text-decoration: none;
     }
@@ -283,7 +304,7 @@
       font-weight: 500;
       font-size: 0.82rem;
       transition: color 0.3s ease;
-      white-space: nowrap;
+      white-space:  nowrap;
     }
 
     nav a:hover {
@@ -343,7 +364,7 @@
       transition: all 0.3s ease;
       box-shadow: 0 4px 20px rgba(0, 175, 233, 0.3);
       cursor: pointer;
-      white-space: nowrap;
+      white-space:  wrap;
       flex-shrink: 0;
     }
 
@@ -646,7 +667,7 @@
       box-shadow: 0 20px 40px rgba(0,0,0,0.6);
     }
 
-    /* --- Branding Section --- */
+    /* --- Branding / Brand Identity Section --- */
     .branding-section {
       background: #060a18;
       max-width: 100%;
@@ -696,6 +717,37 @@
       font-size: 0.92rem;
       opacity: 0.8;
       line-height: 1.6;
+    }
+
+    .brand-list {
+      list-style: none;
+      margin: 1rem 0 1.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .brand-list li {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .brand-list li::before {
+      content: "•";
+      color: var(--dst-primary-3);
+      font-weight: bold;
+    }
+
+    .badge-text {
+      font-size: 0.8rem;
+      color: var(--dst-primary-3);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
     }
 
     /* --- Digital Marketing Section --- */
@@ -982,7 +1034,6 @@
       opacity: 0.8;
       line-height: 1.6;
     }
-
     /* --- Case Studies Section --- */
     .case-studies-section {
       background: #090e22;
@@ -1050,6 +1101,7 @@
       font-size: 0.88rem;
       letter-spacing: 0.5px;
     }
+
 
     /* --- Modal Overlay Styles --- */
     .modal-overlay {
@@ -1366,14 +1418,17 @@
     </div>
   </div>
 
-  <!-- Main Navigation Row with Dropdown Items -->
+  <!-- Main Navigation Bar -->
   <div class="header-main-bar">
     <div class="header-left-group">
       <a href="#home" class="logo">
         <div class="logo-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
         </div>
-        <div><span class="logo-equivora">Equivora</span><span class="logo-digital">Digi<span class="accent-letter">t</span><span class="accent-letter">a</span>l</span></div>
+        <div class="logo-text-group">
+          <div class="logo-main-row"><span class="logo-equivora">Equivora</span><span class="logo-digital">Digi<span class="accent-letter">t</span><span class="accent-letter">a</span>l</span></div>
+          <div class="logo-tagline">Strategic Marketing & Branding </div>
+        </div>
       </a>
     </div>
 
@@ -1398,18 +1453,30 @@
         <li class="dropdown">
           <a href="#branding" class="nav-link">Branding</a>
           <ul class="dropdown-menu">
-            <li><a href="#branding">Brand Positioning</a></li>
-            <li><a href="#branding">Visual Identity Systems</a></li>
-            <li><a href="#branding">Brand Guidelines</a></li>
+            <li><a href="#branding">Brand Identity</a></li>
+            <li><a href="#branding">Custom Logo Design</a></li>
+            <li><a href="#branding">Brand Strategy</a></li>
+            <li><a href="#branding">Rebranding Solutions</a></li>
           </ul>
         </li>
         <li class="dropdown">
-          <a href="#marketing" class="nav-link">Services</a>
+          <a href="#marketing" class="nav-link">Digital Marketing</a>
           <ul class="dropdown-menu">
             <li><a href="#marketing">Search Engine Optimization</a></li>
             <li><a href="#marketing">Paid Media & PPC</a></li>
             <li><a href="#marketing">Email & Automation</a></li>
             <li><a href="#marketing">Social Media Marketing</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#services" class="nav-link">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#services">Search Engine Optimization</a></li>
+            <li><a href="#services">Paid Media & PPC</a></li>
+            <li><a href="#services">Email & Automation</a></li>
+            <li><a href="#services">Social Media Marketing</a></li>
+            <li><a href="#services">Custom Web Architecture</a></li>
+            <li><a href="#services">Brand Strategy & Positioning</a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -1852,68 +1919,668 @@
     </div>
   </section>
 
-  <!-- 1. Strategic Branding & Identity Section -->
-  <section id="branding" class="branding-section">
+  <!-- Core Services Section -->
+  <section id="services" class="digital-marketing-section">
     <div>
       <div class="section-title">
-        <h2>Strategic Branding & Identity</h2>
-        <p>Crafting powerful brand narratives, distinctive visual systems, and unforgettable market positioning that resonate with high-value audiences.</p>
+        <div class="badge-text" style="margin-bottom: 0.5rem;">Strategic Execution • Comprehensive Solutions</div>
+        <div style="font-size: 1.1rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1.5rem;">End-to-End Growth Capabilities</div>
+        <h2>Our Core Services</h2>
+        <p>We provide a full suite of strategic digital marketing, design, and branding services engineered to scale your enterprise and maximize return on investment.</p>
+        <div style="margin-top: 2rem;">
+          <a href="#contact" class="cta-btn">Request a Proposal</a>
+          <a href="#contact" class="cta-btn" style="background: transparent; color: #fff; border: 1px solid var(--dst-primary-3); margin-left: 1rem;">Speak With An Expert</a>
+        </div>
       </div>
-      <div class="branding-grid">
-        <div class="branding-card">
-          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Brand Positioning Strategy Session" class="card-img">
-          <div class="branding-content">
-            <h3>Brand Positioning & Strategy</h3>
-            <p>Define your unique market wedge, pinpoint ideal enterprise buyer personas, and craft messaging architectures that set you apart from competitors.</p>
+
+      <!-- Core Services Grid -->
+      <div class="dm-grid" style="margin-top: 3rem;">
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Search Engine Optimization" class="card-img">
+          <div class="dm-content">
+            <h3>Search Engine Optimization</h3>
+            <p>Dominate search engine results pages with comprehensive technical audits, intent-driven keyword research, and custom architecture designed for high organic visibility.</p>
           </div>
         </div>
-        <div class="branding-card">
-          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Visual Identity Systems & Design" class="card-img">
-          <div class="branding-content">
-            <h3>Visual Identity Systems</h3>
-            <p>Develop comprehensive design languages including bespoke typography, color systems, and elite collateral to establish immediate brand recall.</p>
+
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Paid Media & PPC" class="card-img">
+          <div class="dm-content">
+            <h3>Paid Media & PPC Ads</h3>
+            <p>Maximize profitability with high-ROI programmatic, social, and search ad campaigns meticulously structured to lower customer acquisition costs.</p>
           </div>
         </div>
-        <div class="branding-card">
-          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Brand Guidelines & Governance" class="card-img">
-          <div class="branding-content">
-            <h3>Brand Guidelines & Governance</h3>
-            <p>Build meticulous style guides and scalable asset libraries that ensure absolute consistency across all global touchpoints and channels.</p>
+
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Email & Automation" class="card-img">
+          <div class="dm-content">
+            <h3>Email & Marketing Automation</h3>
+            <p>Engage your pipeline with targeted lifecycle sequences, advanced segmentation, and automated workflows engineered to nurture leads and boost lifetime value.</p>
+          </div>
+        </div>
+
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=800&q=80" alt="Social Media Marketing" class="card-img">
+          <div class="dm-content">
+            <h3>Social Media Marketing</h3>
+            <p>Build lasting community loyalty and brand authority through consistent storytelling, strategic scheduling, and high-engagement social campaigns.</p>
+          </div>
+        </div>
+
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Custom Web Architecture" class="card-img">
+          <div class="dm-content">
+            <h3>Custom Web Architecture</h3>
+            <p>Transform visitor interest into conversions with lightning-fast, mobile-first, and beautifully engineered web experiences built on robust CMS platforms.</p>
+          </div>
+        </div>
+
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Brand Strategy & Positioning" class="card-img">
+          <div class="dm-content">
+            <h3>Brand Strategy & Positioning</h3>
+            <p>Define your unique value proposition, tone of voice, and visual identity system to stand apart from lookalike competitors and scale with clarity.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 2. Digital Marketing Section -->
+  <!-- CUSTOM LOGO DESIGN SEGMENT -->
+  <div style="margin-top: 6rem; background: #090e22; border: 1px solid rgba(0, 175, 233, 0.3); border-radius: 12px; padding: 4rem 3rem;">
+    <div class="section-title">
+      <div class="badge-text">DesignRush logo • 5 Star DesignRush Reviews</div>
+      <h3 style="font-size: 2.2rem; text-transform: uppercase;">Award-Winning Logo Design Agency</h3>
+      <p>Work with a top-rated logo design agency to create a mark that captures who you are and holds up everywhere your brand shows up.</p>
+      <ul class="brand-list" style="justify-content: center; margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 2rem;">
+        <li>Make a strong first impression</li>
+        <li>Stay recognizable at any size, on any screen</li>
+        <li>Look established and worth the price</li>
+        <li>Own a mark that’s unmistakably yours</li>
+      </ul>
+      <div style="margin-top: 2rem;">
+        <a href="#contact" class="cta-btn">Request a Quote</a>
+      </div>
+    </div>
+
+    <!-- Logo Design Services Grid -->
+    <div style="margin-top: 4rem;">
+      <div class="section-title" style="margin-bottom: 2.5rem;">
+        <div style="font-size: 1.1rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 0.5rem;">Branding Agency Excellence Award</div>
+        <h4 style="font-size: 1.8rem; text-transform: uppercase; color: #fff;">Our Logo Design Services</h4>
+        <p>We craft visual identities that do more than look good. They position your brand for long-term recognition, trust and growth.</p>
+      </div>
+
+      <div class="branding-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="branding-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Custom Logo Design</div>
+          <p>Crafting original, memorable vector marks tailored to your brand’s personality, mission, and target market.</p>
+        </div>
+        <div class="branding-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Logo Redesign & Brand Evolution</div>
+          <p>Modernizing legacy logos while retaining brand equity and recognition across evolving digital platforms.</p>
+        </div>
+        <div class="branding-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Comprehensive Brand Guidelines</div>
+          <p>Compiling clear documentation on logo usage, color schemes, typography, and spacing rules.</p>
+        </div>
+        <div class="branding-card" style="text-align: center; padding: 2rem;">
+          <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Branding Implementation Across Touchpoints</div>
+          <p>Ensuring your logo looks pristine and professional across print, digital, packaging, and large-format materials.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Design Portfolio -->
+    <div style="margin-top: 5rem;">
+      <div class="section-title">
+        <div style="font-size: 0.9rem; color: var(--dst-primary-3); text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;">In Action • 1 Minute Scroll</div>
+        <h4 style="font-size: 2rem; text-transform: uppercase; color: #fff;">Custom Logo Design Agency Portfolio</h4>
+        <p>See how our logo experts craft identities that stand out and drive real business impact.</p>
+      </div>
+
+      <div class="branding-grid">
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Exactera Brand Identity" class="card-img">
+          <div class="branding-content">
+            <h3>Exactera Corporate Identity</h3>
+            <p>Exactera brand identity visual, conveying professionalism, confidence, and modern corporate positioning.</p>
+          </div>
+        </div>
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" alt="Best Wire & Cable Brand" class="card-img">
+          <div class="branding-content">
+            <h3>Wire & Cable Brand System</h3>
+            <p>Best Wire & Cable brand identity, showcasing reliability and expertise through a strong industrial visual.</p>
+          </div>
+        </div>
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Ampure EV Charging" class="card-img">
+          <div class="branding-content">
+            <h3>Ampure EV Charging Solutions</h3>
+            <p>Technician operating electric vehicle charging equipment representing Ampure brand identity and EV solutions.</p>
+          </div>
+        </div>
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=800&q=80" alt="Rollink eCommerce Growth" class="card-img">
+          <div class="branding-content">
+            <h3>Rollink E-Commerce Branding</h3>
+            <p>Strategic branding across digital touchpoints supporting a 500% revenue surge in the U.S. market.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detailed Case Studies within Logo Design Segment -->
+    <div style="margin-top: 5rem; display: flex; flex-direction: column; gap: 3rem;">
+      <div style="background: rgba(19, 24, 72, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); padding: 2.5rem; border-radius: 8px;">
+        <h4 style="color: #fff; font-size: 1.35rem; margin-bottom: 1rem;">Global Brand Standardization For Market Consistency</h4>
+        <p style="opacity: 0.85; margin-bottom: 1rem;">When a global EV leader needed a unified voice, brand standardization became mission-critical. A refined brand positioning, modern tone and scalable toolkit now empower teams worldwide to activate the brand consistently across digital channels, sales assets and marketing campaigns without diluting the core identity. We laid the foundation for faster market launches and stronger cross-border brand recognition.</p>
+      </div>
+      <div style="background: rgba(19, 24, 72, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); padding: 2.5rem; border-radius: 8px;">
+        <h4 style="color: #fff; font-size: 1.35rem; margin-bottom: 1rem;">Crafting A Consumer Brand From The Ground Up</h4>
+        <p style="opacity: 0.85; margin-bottom: 1rem;">To position BIWIN as a premium storage brand, our team reworked every element, from architecture to aesthetics, to forge emotional connections. The result is a clearly defined consumer-facing identity, complete with evocative product line names, a symbol-driven logo and a comprehensive brand guide built for clarity, consistency and growth across markets. By separating the consumer line from its corporate parent, the brand gained the freedom to speak directly to modern tech-savvy buyers.</p>
+      </div>
+      <div style="background: rgba(19, 24, 72, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); padding: 2.5rem; border-radius: 8px;">
+        <h4 style="color: #fff; font-size: 1.35rem; margin-bottom: 1rem;">Establishing A National Brand In Wire & Cable</h4>
+        <p style="opacity: 0.85; margin-bottom: 1rem;">Repositioning a B2B manufacturer for national growth meant more than a visual refresh. We created a new identity that combines its core values and expertise into a modern system that signals trust and technical excellence. A flexible logo system, upgraded messaging and custom 3D visuals give the brand the credibility to compete and connect on a larger stage.</p>
+      </div>
+    </div>
+
+    <!-- Logo Design Process Section -->
+    <div style="margin-top: 5rem;">
+      <div class="section-title">
+        <h4 style="font-size: 2rem; text-transform: uppercase; color: #fff;">Our Custom Logo Design Process</h4>
+        <p>Take a peek behind the curtain and explore the process we follow to deliver measurable results.</p>
+      </div>
+
+      <div class="branding-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+        <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+          <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">01</div>
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Brand Visual Discovery</h5>
+          <p>An in-depth exploration of your brand’s history, values, and competitive landscape while identifying design requirements.</p>
+        </div>
+        <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+          <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">02</div>
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Logo Research & Concept Development</h5>
+          <p>Drafting distinctive visual directions and sketching initial concepts aligned with your strategic market position.</p>
+        </div>
+        <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+          <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">03</div>
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Logo Presentation & Refinements</h5>
+          <p>Presenting refined concepts and incorporating your feedback to ensure the final mark hits the exact tone.</p>
+        </div>
+        <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+          <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">04</div>
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Logo Delivery & Style Guide</h5>
+          <p>Delivering final source vector files along with extended brand guidelines for seamless multi-platform application.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Logo Design Testimonial -->
+    <div style="margin-top: 5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; background: rgba(13, 19, 43, 0.8); border: 1px solid rgba(255,255,255,0.08); padding: 3rem; border-radius: 12px;">
+      <div style="text-align: center;">
+        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Connie Wong" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--dst-primary-3); margin-bottom: 1rem;">
+        <h5 style="color: #fff; font-size: 1.2rem;">GrowPath</h5>
+        <p style="color: var(--dst-primary-3); font-weight: 600;">Connie Wong</p>
+      </div>
+      <div>
+        <blockquote style="font-size: 1.05rem; font-style: italic; opacity: 0.95; line-height: 1.7; margin-bottom: 1.5rem;">
+          "The team was great to work with and super efficient and professional in delivering a quality website! We re-launched our website in hopes of creating a more cohesive brand, and EquivoraDigital's efforts did just that, with recommendations not just around overall website but brand strategy."
+        </blockquote>
+        <div style="font-size: 0.9rem; color: var(--dst-primary-3); font-weight: 700;">Verified Client Review • GrowPath</div>
+      </div>
+    </div>
+
+    <!-- Logo Design FAQs -->
+    <div style="margin-top: 5rem;">
+      <div class="section-title">
+        <h4 style="font-size: 2rem; text-transform: uppercase; color: #fff;">Logo Design Agency FAQs</h4>
+        <p>Common questions about our custom logo design process and deliverables.</p>
+      </div>
+
+      <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+        <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">What should I consider when choosing a logo for my brand?</h5>
+          <p style="opacity: 0.85; font-size: 0.92rem;">Consider scalability, memorability, relevance to your target audience, and how well the mark reflects your core values across different digital and print mediums.</p>
+        </div>
+        <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How is a premium logo design different from a basic logo design?</h5>
+          <p style="opacity: 0.85; font-size: 0.92rem;">Premium logo design is rooted in deep market research, competitive analysis, custom vector craftsmanship, and comprehensive brand guidelines ensuring long-term utility.</p>
+        </div>
+        <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How long does it take for your logo design agency to create a premium solution?</h5>
+          <p style="opacity: 0.85; font-size: 0.92rem;">A standard logo design and brand guideline project typically spans between 3 to 5 weeks from discovery to final delivery.</p>
+        </div>
+        <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How will I receive the final logo design files?</h5>
+          <p style="opacity: 0.85; font-size: 0.92rem;">You receive all master source vector files (AI, EPS, SVG) along with high-res PNG, JPEG, and favicon formats for complete ownership and multi-platform use.</p>
+        </div>
+        <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+          <h5 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How can I ensure consistency in my brand design across different platforms and mediums?</h5>
+          <p style="opacity: 0.85; font-size: 0.92rem;">By adhering to the exhaustive brand guidelines and style books provided upon project completion, governing color codes, font usage, and clear space rules.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END CUSTOM LOGO DESIGN SEGMENT -->
+
+  <!-- Branding & Brand Identity Section -->
+  <section id="branding" class="branding-section">
+    <div>
+      <div class="section-title">
+        <div class="badge-text">DesignRush logo • 5 Star DesignRush Reviews</div>
+        <h2>Full-Service Branding Agency</h2>
+        <p>Partner with a full-service branding agency that turns your mission, vision and values into a signature, memorable identity. From strategy to launch, our branding services help growing brands sharpen their positioning, build credibility and stay consistent across every channel.</p>
+        <ul class="brand-list" style="justify-content: center; margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 2rem;">
+          <li>Improve Brand Awareness & Recognition</li>
+          <li>Clarify Your Messaging To Connect With Audiences</li>
+          <li>Build Trust & Industry Credibility</li>
+        </ul>
+        <div style="margin-top: 2rem;">
+          <a href="#contact" class="cta-btn">Request a Quote</a>
+        </div>
+      </div>
+
+      <!-- 500+ Projects & Showcase Grid -->
+      <div style="margin-top: 4rem;">
+        <div class="section-title" style="margin-bottom: 2.5rem;">
+          <div style="font-size: 1.1rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 0.5rem;">SEE OUR WORK</div>
+          <h3 style="font-size: 2rem; text-transform: uppercase;">500+ Branding Projects Delivered</h3>
+          <p>A look at the brands we’ve partnered with as a full-service branding agency — from new launches to complete transformations.</p>
+        </div>
+
+        <div class="branding-grid">
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Market Positioning Analysis" class="card-img">
+            <div class="branding-content">
+              <h3>Market Positioning Analysis</h3>
+              <p>Refined positioning through in-depth market, audience and competitor research.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Coastal Identity Design" class="card-img">
+            <div class="branding-content">
+              <h3>Coastal Identity Design</h3>
+              <p>Created a vibrant, family-friendly beachfront lifestyle identity.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Healthcare Launch Strategy" class="card-img">
+            <div class="branding-content">
+              <h3>Healthcare Launch Strategy</h3>
+              <p>Built trust and clarity with a standout identity for a new healthcare company.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" alt="Vacation Rental Rebrand" class="card-img">
+            <div class="branding-content">
+              <h3>Vacation Rental Rebrand</h3>
+              <p>A bold new identity inspired by the colors and character of Key West.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=800&q=80" alt="Aerospace Company Evolution" class="card-img">
+            <div class="branding-content">
+              <h3>Aerospace Company Evolution</h3>
+              <p>Blended legacy and ambition in a scalable space transport identity.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" alt="Luxury Yacht Transformation" class="card-img">
+            <div class="branding-content">
+              <h3>Luxury Yacht Transformation</h3>
+              <p>Redefined positioning and visuals for a high-end yachting experience.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Boutique CRO Identity" class="card-img">
+            <div class="branding-content">
+              <h3>Boutique CRO Identity</h3>
+              <p>Refreshed brand identity to reflect global reach and scientific precision.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Wellness Rebrand Strategy" class="card-img">
+            <div class="branding-content">
+              <h3>Wellness Rebrand Strategy</h3>
+              <p>Unified modern visuals and messaging for a patient-first wellness provider.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="Legacy Brand Refresh" class="card-img">
+            <div class="branding-content">
+              <h3>Legacy Brand Refresh</h3>
+              <p>A soulful identity built to connect craftsmanship with digital-first audiences.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+          <div class="branding-card">
+            <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Engineering Brand Integration" class="card-img">
+            <div class="branding-content">
+              <h3>Engineering Brand Integration</h3>
+              <p>Aligned identity with parent brand while maintaining market distinction.</p>
+              <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; text-align: center;">Click to view project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR CLIENTS Banner -->
+      <div style="margin-top: 5rem; background: rgba(19, 24, 72, 0.6); border: 1px solid rgba(0, 175, 233, 0.3); border-radius: 12px; padding: 3rem; text-align: center;">
+        <span class="badge-text">OUR CLIENTS</span>
+        <h3 style="font-size: 2rem; color: #fff; margin-bottom: 1rem; text-transform: uppercase;">Trusted by Brands of Every Size</h3>
+        <p style="opacity: 0.85; max-width: 700px; margin: 0 auto 1.5rem auto;">We partner with organizations of all sizes to deliver measurable results across industries.</p>
+        <a href="#contact" class="cta-btn">Explore All Services</a>
+      </div>
+
+      <!-- Brand Identity Services Grid (Detailed Segments) -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title" style="margin-bottom: 2rem;">
+          <div style="font-size: 1.1rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 0.5rem;">why EquivoraDigital?</div>
+          <h3 style="font-size: 2rem; text-transform: uppercase;">Our Branding Services</h3>
+          <p>Work with our award-winning branding agency to grow your business across every touchpoint.</p>
+        </div>
+
+        <div class="branding-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Brand Strategy</div>
+            <p>Every engagement is grounded in research into your market, audience and competitors. We shape your positioning, messaging and unique value proposition, then document it so your brand stays consistent everywhere.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.5rem; display: inline-block; text-align: center;">Explore our Branding Strategy services.</a>
+          </div>
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Logo Design & Visual Identity</div>
+            <p>Crafting original, memorable vector marks, color palettes, and typographic hierarchies tailored to your brand’s personality and long-term recognition.</p>
+          </div>
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Brand Naming</div>
+            <p>Developing catchy, legally clear, and highly resonant brand names that capture your core enterprise mission and connect instantly with target audiences.</p>
+          </div>
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Packaging & Brand Collateral</div>
+            <p>Designing stunning physical packaging, digital assets, trade show displays, and sales collateral that reflect premium quality.</p>
+          </div>
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Rebranding</div>
+            <p>Rebuilding how your market sees you—from name and identity to messaging and positioning—to command higher perceived value.</p>
+          </div>
+          <div class="branding-card" style="padding: 2.2rem;">
+            <div style="font-size: 1.2rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1rem;">Launch & Optimization</div>
+            <p>Executing flawless go-to-market rollouts and continuous optimization across every channel to maximize brand engagement.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industries Served Section -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <div class="badge-text">Industries Served</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Branding Services for Every Industry</h3>
+          <p>With decades of combined experience, our branding agency works with brands across sectors — each with a specialist page and tailored approach:</p>
+        </div>
+
+        <div class="branding-grid" style="grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));">
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Corporate Branding</h4>
+            <p>As a branding agency, we offer brand strategies, design, positioning and messaging services for corporate businesses of all sizes.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore corporate branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Startup Branding</h4>
+            <p>We develop agile, scalable brand identities to help startups showcase their offers across product, marketing and fundraising materials.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore startup branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Hotel Branding</h4>
+            <p>We offer custom brand strategies for large hotel chains, boutique B&B’s and everything in between, to ensure a premium experience for all guests.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore hotel branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Healthcare Branding</h4>
+            <p>As one of the top branding agencies, we create custom strategies for hospitals, urgent care centers and private physicians.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore healthcare branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">eCommerce Branding</h4>
+            <p>Our experts can create scalable branding solutions for eCommerce businesses, to help you unify your product pages, packaging and digital identity.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore ecommerce branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Construction Company Branding</h4>
+            <p>We can showcase your construction company’s signature differentiators, target project types and service areas.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore construction company branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Real Estate Branding</h4>
+            <p>Our team offers company branding services and visuals for agencies, developers and brokers to boost recognition and attract clients.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore real estate branding</a>
+          </div>
+          <div class="branding-card" style="padding: 2rem;">
+            <span class="trend-tag">Industry expertise</span>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Legal Branding</h4>
+            <p>We create brand identity, messaging and positioning for law firms to build trust, improve credibility and increase referrals.</p>
+            <a href="#contact" class="cta-btn" style="margin-top: 1.2rem; display: inline-block; text-align: center;">explore legal branding</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Branding Process Section -->
+      <div style="margin-top: 5rem; background: #090e22; border: 1px solid rgba(0,175,233,0.3); border-radius: 12px; padding: 4rem 3rem;">
+        <div class="section-title">
+          <div class="badge-text">Our Branding Process</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">From Discovery to Launch</h3>
+          <p>A structured approach to uncovering your brand's unique value and translating it into a memorable identity.</p>
+        </div>
+
+        <div class="branding-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+            <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">01</div>
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Brand Discovery</h4>
+            <p>We get to know your business inside out — defining your audience, competitors, mission, vision and values to find your ideal market position.</p>
+          </div>
+          <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+            <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">02</div>
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Brand Strategy</h4>
+            <p>Formulating core positioning frameworks, value propositions, messaging pillars, and tone of voice guidelines.</p>
+          </div>
+          <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+            <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">03</div>
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Visual Identity</h4>
+            <p>Designing bespoke logos, color systems, typography, and graphic assets that visually capture your brand identity.</p>
+          </div>
+          <div class="branding-card" style="padding: 1.8rem; background: #131848;">
+            <div style="font-size: 1.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">04</div>
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Brand Book & Guidelines</h4>
+            <p>Compiling exhaustive style guides to ensure flawless consistency across all digital and physical touchpoints.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Growth Story CTA Banner -->
+      <div style="margin-top: 5rem; background: rgba(19, 24, 72, 0.8); border: 1px solid rgba(0,175,233,0.3); padding: 3rem; border-radius: 12px; text-align: center;">
+        <span class="badge-text">YOUR INDUSTRY. YOUR NEXT GROWTH STORY.</span>
+        <h3 style="font-size: 2rem; color: #fff; margin: 1rem 0; text-transform: uppercase;">Let’s build what comes next.</h3>
+        <a href="#contact" class="cta-btn" style="margin-top: 1rem; display: inline-block;">Request a quote</a>
+      </div>
+
+      <!-- What Sets Us Apart Section -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <div class="badge-text">What Sets Us Apart?</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Brand-First, Business-Driven Strategy</h3>
+          <p>Deep Discovery & Differentiation • Strategy, Design & Execution • Project Ownership & Transparent Process • Trusted By Global Brands • Deep Industry Experience</p>
+        </div>
+        <div style="max-width: 900px; margin: 0 auto; background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2.5rem; border-radius: 8px; text-align: center;">
+          <p style="font-size: 1.05rem; opacity: 0.95; line-height: 1.7;">Research-backed strategy that improves visibility, deepens engagement and supports long-term brand growth. We understand what makes your brand special, so your audience can too.</p>
+        </div>
+      </div>
+
+      <!-- Testimonial Spotlight -->
+      <div style="margin-top: 5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; background: rgba(13,19,43,0.8); border: 1px solid rgba(255,255,255,0.08); padding: 3rem; border-radius: 12px;">
+        <div style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Sierra Harris" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--dst-primary-3); margin-bottom: 1rem;">
+          <h4 style="color: #fff; font-size: 1.2rem;">Surely Dirty</h4>
+          <p style="color: var(--dst-primary-3); font-weight: 600;">Sierra Harris</p>
+          <span style="font-size: 0.8rem; opacity: 0.8;">Founder – Surely Dirty</span>
+        </div>
+        <div>
+          <blockquote style="font-size: 1.05rem; font-style: italic; opacity: 0.95; line-height: 1.7; margin-bottom: 1.5rem;">
+            "Working with EquivoraDigital on our brand has been an incredible experience. They truly understood our vision and helped bring it to life in a way that felt authentic to who we are. I couldn’t be more excited about the future. We can’t wait for people to experience the brand we’ve built together."
+          </blockquote>
+          <a href="#contact" class="cta-btn" style="display: inline-block;">View testimonial</a>
+        </div>
+      </div>
+
+      <!-- Branding Services FAQs -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Branding Services FAQs</h3>
+          <p>Common questions about our branding agency methodologies, deliverables, and timelines.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">What does a branding agency do?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">A branding agency helps companies define their market position, visual identity, messaging, and overall brand strategy to build trust and recognition.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">What branding services do you offer, and who owns the deliverables?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">We offer full-service strategy, logo design, guidelines, and rebrand solutions. You retain 100% ownership of all final master files and brand assets.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How do I know if I need a brand refresh or a full rebrand?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">A brand refresh updates visual elements while retaining core equity, whereas a full rebrand alters positioning, naming, and identity to reflect major shifts in business goals.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How long does the branding process take?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">A comprehensive branding and strategy engagement typically spans between 4 to 8 weeks from discovery to final delivery.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Can you build on our existing brand instead of starting over?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">Yes. We frequently audit and evolve existing brand equity to modernize visual presentation without losing established market recognition.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How will I know the branding is working?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">Through improved brand sentiment, higher engagement metrics, increased customer acquisition efficiency, and consistent cross-channel recognition.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Industry-Recognised Branding Experts Section -->
+      <div style="margin-top: 5rem; text-align: center;">
+        <span class="badge-text">Industry-Recognised Branding Experts</span>
+        <h3 style="font-size: 2rem; text-transform: uppercase; color: #fff; margin: 1rem 0;">Awards & Recognition</h3>
+        <p style="opacity: 0.85; margin-bottom: 2rem;">Recognized globally for excellence in brand strategy, design, and digital execution.</p>
+        <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+          <div style="background: #131848; padding: 1.5rem 2.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); font-weight: 700;">DesignRush Accredited</div>
+          <div style="background: #131848; padding: 1.5rem 2.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); font-weight: 700;">Top Branding Agency 2026</div>
+          <div style="background: #131848; padding: 1.5rem 2.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); font-weight: 700;">5-Star Client Reviews</div>
+        </div>
+        <div style="margin-top: 2.5rem;">
+          <a href="#contact" class="cta-btn">Request a quote</a>
+        </div>
+      </div>
+
+      <!-- Branding Trends Section -->
+      <div style="margin-top: 6rem;">
+        <div class="section-title">
+          <h2>Branding Trends</h2>
+          <p>Keep the inspiration going with these branding posts</p>
+        </div>
+        <div class="trends-grid">
+          <div class="trend-card">
+            <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=800&q=80" alt="Shopify Brand Guidelines" class="card-img">
+            <div class="trend-content">
+              <span class="trend-tag">Shopify Brand Guidelines</span>
+              <h3>7 Steps To Grow Your Brand</h3>
+              <p>Actionable advice on building robust Shopify brand guidelines to scale your online presence.</p>
+            </div>
+          </div>
+          <div class="trend-card">
+            <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80" alt="Private Label Branding" class="card-img">
+            <div class="trend-content">
+              <span class="trend-tag">Private Label Branding</span>
+              <h3>Tips & Advice For Corporate Growth</h3>
+              <p>Leverage private label positioning to capture new market segments and drive corporate expansion.</p>
+            </div>
+          </div>
+          <div class="trend-card">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80" alt="Brand Trust Data" class="card-img">
+            <div class="trend-content">
+              <span class="trend-tag">Brand Trust Data</span>
+              <h3>How To Use Brand Trust Data To Enhance Marketing</h3>
+              <p>Turn consumer trust metrics into high-converting messaging pillars across your marketing funnels.</p>
+            </div>
+          </div>
+          <div class="trend-card">
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" alt="Brand Activation Ideas" class="card-img">
+            <div class="trend-content">
+              <span class="trend-tag">Brand Activation Ideas</span>
+              <h3>17 Best Brand Activation Ideas Used By Big Brands</h3>
+              <p>Discover creative experiential marketing tactics used by global enterprises to engage audiences.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Marketing Section -->
   <section id="marketing" class="digital-marketing-section">
     <div>
       <div class="section-title">
-        <h2>Our Scope of Digital Marketing Services</h2>
-        <p>SEO, paid media, email and social, run by one team with one goal: growth you can measure.</p>
+        <div class="badge-text" style="margin-bottom: 0.5rem;">DesignRush logo • 5 Star DesignRush & Google Reviews</div>
+        <div style="font-size: 1.1rem; color: var(--dst-primary-3); font-weight: 700; margin-bottom: 1.5rem;">Best Digital Agency of 2025 • Forbes logo</div>
+        <h2>Digital Marketing Agency Growing Brands Online</h2>
+        <p>Award-winning digital marketing agency taking a strategic approach to SEO, PPC, social, email, content and marketing automation to generate results for B2B, B2C, eCommerce and enterprise brands.</p>
+        <div style="margin-top: 2rem;">
+          <a href="#contact" class="cta-btn">Request a Free Quote</a>
+          <a href="#contact" class="cta-btn" style="background: transparent; color: #fff; border: 1px solid var(--dst-primary-3); margin-left: 1rem;">Start Getting Results</a>
+        </div>
       </div>
 
-      <!-- Verified Performance Banner -->
+      <!-- Verified Performance Banner with Requested Stats -->
       <div class="stats-banner">
         <div class="stat-box">
           <h3>14x</h3>
-          <p>Google Traffic in 6 Months for NY-based law firm (Spar & Bernstein)</p>
+          <p>Google traffic in 6 months for a NY-based law firm (Spar & Bernstein)</p>
         </div>
         <div class="stat-box">
           <h3>+299%</h3>
-          <p>Engaged Sessions for AI software company (AutogenAI)</p>
+          <p>Engaged sessions for an AI software company (AutogenAI)</p>
         </div>
         <div class="stat-box">
           <h3>+1,375%</h3>
-          <p>Purchases for online courses company (Learning Tree)</p>
+          <p>Purchases for an online courses company (Learning Tree)</p>
         </div>
         <div class="stat-box">
           <h3>+961%</h3>
-          <p>Marketing ROI for eCommerce brand (G Pen)</p>
+          <p>Marketing ROI for an eCommerce brand (G Pen)<br><span style="font-size: 0.75rem; color: var(--dst-primary-3); display: block; margin-top: 0.5rem;">All numbers client-verified.</span></p>
         </div>
       </div>
 
       <!-- Scope of Digital Marketing Services Grid -->
+      <div class="section-title" style="margin-top: 5rem; margin-bottom: 2.5rem;">
+        <h3>Our Scope of Digital Marketing Services</h3>
+        <p>SEO, paid media, email and social, run by one team with one goal: growth you can measure.</p>
+      </div>
+
       <div class="dm-grid">
         <div class="dm-card">
           <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Marketing Strategy" class="card-img">
@@ -1964,11 +2631,18 @@
             <p>Lightning-fast, mobile-first, and visually stunning web experiences engineered specifically for high conversions.</p>
           </div>
         </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Content Marketing" class="card-img">
+          <div class="dm-content">
+            <h3>Content Marketing</h3>
+            <p>Authority-driven content strategies that build trust, answer search intent, and convert prospects into loyal brand advocates.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- 3. Digital Trends Section -->
+  <!-- Digital Trends Section -->
   <section id="trends" class="digital-trends-section">
     <div>
       <div class="section-title">
@@ -2004,127 +2678,769 @@
     </div>
   </section>
 
-  <!-- 4. Web Design Section -->
+  <!-- Web Design Section -->
   <section id="webdesign" class="web-design-section">
     <div>
+      <!-- CUSTOM WEB DESIGN COMPANY SEGMENT -->
       <div class="section-title">
-        <h2>High-Impact Web Design</h2>
-        <p>Immersive digital experiences, lightning-fast interfaces, and custom web architectures engineered for conversions.</p>
+        <div class="badge-text">DesignRush logo • 5 Star DesignRush & Google Reviews • Best Digital Agency of 2025 • Forbes logo</div>
+        <h2>Custom Web Design Company</h2>
+        <p>Partner with a top-rated custom web design agency to create a fully optimized website, ready to drive engagement and conversions.</p>
+        <ul class="brand-list" style="justify-content: center; margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 2rem;">
+          <li>Strategy-led design for your target audience</li>
+          <li>Built for performance, SEO and conversions</li>
+          <li>Senior-level team on every project</li>
+        </ul>
+        <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.9;">Strategy, UX, brand-led design and bespoke development on one team and one timeline. We’ve shipped 500+ custom-built websites for B2B, enterprise and brand-led businesses on WordPress, Webflow, Headless and beyond.</p>
+        <div style="margin-top: 2rem;">
+          <a href="#contact" class="cta-btn">Request a Free Quote</a>
+          <a href="#contact" class="cta-btn" style="background: transparent; color: #fff; border: 1px solid var(--dst-primary-3); margin-left: 1rem;">Start Getting Results</a>
+        </div>
       </div>
-      <div class="wd-grid">
-        <div class="wd-card">
-          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Vanguard Architecture" class="wd-media">
-          <div class="wd-info">
-            <span class="wd-tag">UI/UX & Corporate Portals</span>
-            <h3>Vanguard Architecture</h3>
-            <p>Designed a high-performance interactive web presence paired with luxury client presentation portals.</p>
-            <div class="wd-metric">Impact: +180% Inquiries in Q1</div>
+
+      <!-- Verified Stats Banner for Web Design -->
+      <div class="stats-banner" style="margin-top: 3rem;">
+        <div class="stat-box">
+          <h3>4,161%</h3>
+          <p>Surge in new users for Bethpage Federal Credit Union</p>
+        </div>
+        <div class="stat-box">
+          <h3>14x</h3>
+          <p>Organic traffic in 6 months for Spar & Bernstein</p>
+        </div>
+        <div class="stat-box">
+          <h3>467.9%</h3>
+          <p>Lift in total users for BoldTek<br><span style="font-size: 0.75rem; color: var(--dst-primary-3); display: block; margin-top: 0.5rem;">All numbers client-verified.</span></p>
+        </div>
+      </div>
+
+      <!-- Custom Web Design Portfolio -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <div style="font-size: 0.9rem; color: var(--dst-primary-3); text-transform: uppercase; font-weight: 700; margin-bottom: 0.5rem;">1000+ Completed Projects</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Our Custom Web Design Portfolio</h3>
+          <p>Custom B2C, B2B and eCommerce solutions optimized for traffic, engagement and conversion.</p>
+        </div>
+
+        <div class="wd-grid">
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Massimo Motor" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Massimo Motor</span>
+              <h3>American-Assembled Vehicles Storefront</h3>
+              <p>Massimo Motor assembles UTVs, ATVs, marine craft and electric golf carts in Texas, holding every category to the same standard of durability. EquivoraDigital connected Shopify to NetSuite through Celigo, keeping inventory, orders and customer data in sync in real time. Advanced filtering, mega menu navigation and dual-checkout flow drive stronger engagement and conversion.</p>
+              <div class="wd-metric">Massimo Motor Portfolio Optimized</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" alt="Learning Tree" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Learning Tree</span>
+              <h3>50 Years of Workforce Training</h3>
+              <p>Learning Tree has trained IT and management professionals since 1974 for government agencies and Fortune 1000 companies. Our team introduced clearer user journeys and improved discoverability across a vast catalog of IT and management training programs.</p>
+              <div class="wd-metric">Impact: +1,375% Purchases | View Case Study</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Lively" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Lively</span>
+              <h3>Two Decades of Senior Care</h3>
+              <p>Lively has spent two decades helping older adults stay independent, supported by Best Buy Health. Our team prioritized larger touch targets, plainer product discovery and layouts ready for new lines ahead, asking as little as possible of the shopper.</p>
+              <div class="wd-metric">Lively Portfolio Optimized</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80" alt="WAYB" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">WAYB</span>
+              <h3>Comfort-First Travel Gear</h3>
+              <p>WAYB engineered the Pico, a lightweight travel car seat built from aerospace-grade aluminum. Our experts shaped the homepage, product pages, Our Story and Help Center around a 360° product explorer and clearer safety messaging with a direct flow to cart.</p>
+              <div class="wd-metric">WAYB Portfolio Optimized</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="G2 Esports" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">G2 Esports</span>
+              <h3>Global Competitive Gaming</h3>
+              <p>G2 Esports grew into a global competitive gaming organization based in Berlin. Our team reworked how fans move between rosters, brand collaborations and the Performance Lab, giving the G2ARMY a more intuitive route to shop.</p>
+              <div class="wd-metric">Impact: Stronger Conversions & Brand Authority | View Case Study</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=800&q=80" alt="Bang & Olufsen" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Bang & Olufsen</span>
+              <h3>A Century of Acoustic Craft</h3>
+              <p>Defining premium sound and industrial design since 1925. Our team gave each product line its own considered layout, letting materials, finishes and engineering detail carry the story rather than stock templates.</p>
+              <div class="wd-metric">Bang & Olufsen Portfolio Optimized</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80" alt="Ventura Foods" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Ventura Foods</span>
+              <h3>National Foodservice Supplier</h3>
+              <p>Ventura Foods manufactures dressings, sauces and oils served nationwide. The team gave each audience, from foodservice operators to retail buyers, its own route through a deep catalog where products and recipes publish into the right path.</p>
+              <div class="wd-metric">View Case Study</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Unity Environmental University" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Unity Environmental University</span>
+              <h3>AI-Guided Sustainability Education</h3>
+              <p>Pioneering online environmental education since 1965. Complex academic content was restructured into intuitive pathways. Una, a fully embedded AI chatbot, delivers real-time guidance to reduce friction in enrollment goals.</p>
+              <div class="wd-metric">Unity Environmental University Portfolio Optimized</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Clearinghouse CDFI" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">Clearinghouse CDFI</span>
+              <h3>Borrower & Investor Portals</h3>
+              <p>Providing commercial real-estate-backed loans, the site was split into separate borrower and investor paths, each with its own funnel. Qualified inquiries now land directly in Salesforce.</p>
+              <div class="wd-metric">Impact: +87% Organic Traffic | View Case Study</div>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1582650625119-3a31f80585f9?auto=format&fit=crop&w=800&q=80" alt="BCI Worldwide" class="wd-media">
+            <div class="wd-info">
+              <span class="wd-tag">BCI Worldwide</span>
+              <h3>45 Years of Hospitality Installs</h3>
+              <p>Installed FF&E for Wynn, Marriott, MGM and Hilton. We built a locations-first architecture with a dedicated page for each office and a project-led portfolio reflecting global scale.</p>
+              <div class="wd-metric">Impact: 6 to 9 Locations Added Post-Launch | View Case Study</div>
+            </div>
           </div>
         </div>
-        <div class="wd-card">
-          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Lumina Fintech Group" class="wd-media">
-          <div class="wd-info">
-            <span class="wd-tag">Fintech Web Architecture</span>
-            <h3>Lumina Fintech Group</h3>
-            <p>Engineered a custom financial web platform featuring interactive user dashboards and secure client areas.</p>
-            <div class="wd-metric">Impact: Secured $12M Series A Funding</div>
+      </div>
+
+      <!-- Web Design Video Spotlight -->
+      <div style="margin-top: 5rem; background: rgba(19, 24, 72, 0.6); border: 1px solid rgba(0, 175, 233, 0.3); border-radius: 12px; padding: 3rem; text-align: center;">
+        <span class="wd-tag">Watch Video</span>
+        <h4 style="font-size: 1.8rem; color: #fff; margin-bottom: 1rem; text-transform: uppercase;">Watch the 30-Sec Story</h4>
+        <p style="opacity: 0.85; max-width: 700px; margin: 0 auto 1.5rem auto;">Discover how our custom web design solutions transform enterprise brands and accelerate digital growth.</p>
+        <a href="#contact" class="cta-btn">Watch Video Overview</a>
+      </div>
+
+      <!-- Testimonial Spotlight -->
+      <div style="margin-top: 5rem; display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: center; background: rgba(13, 19, 43, 0.8); border: 1px solid rgba(255,255,255,0.08); padding: 3rem; border-radius: 12px;">
+        <div style="text-align: center;">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" alt="Ted Eleftheriou" style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; border: 3px solid var(--dst-primary-3); margin-bottom: 1rem;">
+          <h5 style="color: #fff; font-size: 1.2rem;">National Golf Foundation</h5>
+          <p style="color: var(--dst-primary-3); font-weight: 600;">Ted Eleftheriou</p>
+        </div>
+        <div>
+          <blockquote style="font-size: 1.05rem; font-style: italic; opacity: 0.95; line-height: 1.7; margin-bottom: 1.5rem;">
+            "What truly sets EquivoraDigital apart is their unwavering commitment to client satisfaction. Throughout the process, they presented us with multiple options and designs, taking the time to explain the rationale behind each choice and its impact on SEO."
+          </blockquote>
+          <div style="font-size: 0.9rem; color: var(--dst-primary-3); font-weight: 700;">Verified Client Review • National Golf Foundation</div>
+        </div>
+      </div>
+
+      <!-- Before & After Examples -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Before & After Examples</h3>
+          <p>What Custom Web Design Looks Like In Practice</p>
+        </div>
+
+        <div class="wd-grid">
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Remax Costa Rica" class="wd-media">
+            <div class="wd-info">
+              <h4>Remax Costa Rica Redesign</h4>
+              <p>Enhanced visuals, navigation, and conversion-focused property search workflows.</p>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Pipes Utility Contractors" class="wd-media">
+            <div class="wd-info">
+              <h4>Pipes Utility Contractors</h4>
+              <p>Before and after redesign with enhanced visuals, branding, and service-focused UX.</p>
+            </div>
+          </div>
+          <div class="wd-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Devensoft" class="wd-media">
+            <div class="wd-info">
+              <h4>Devensoft Software Platform</h4>
+              <p>Modernized enterprise interface and streamlined onboarding funnels.</p>
+            </div>
           </div>
         </div>
-        <div class="wd-card">
-          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Stellar Wearables" class="wd-media">
-          <div class="wd-info">
-            <span class="wd-tag">E-Commerce Platforms</span>
-            <h3>Stellar Wearables Store</h3>
-            <p>Built a lightning-fast Shopify Plus storefront with immersive 3D product previews and streamlined checkout.</p>
-            <div class="wd-metric">Impact: 100k+ Active Community Members</div>
+      </div>
+
+      <!-- Platform Choice Section -->
+      <div style="margin-top: 5rem; background: #090e22; border: 1px solid rgba(0, 175, 233, 0.3); border-radius: 12px; padding: 4rem 3rem;">
+        <div class="section-title">
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Custom Web Design On All CMS Platforms</h3>
+          <p>We work across every major CMS, so the platform choice comes down to what fits your business needs.</p>
+        </div>
+
+        <div class="wd-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.3rem;">WordPress</h4>
+            <p>Most of the sites we build run on WordPress for good reason. It’s flexible, easy for your team to manage and supports any functionality. We design and develop WordPress sites with your audience and SEO structure in mind.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.3rem;">Shopify</h4>
+            <p>Built for high-performance eCommerce storefronts, seamless inventory syncs, and lightning-fast checkouts designed to scale sales.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.3rem;">Magento</h4>
+            <p>Robust enterprise-grade commerce architecture designed for complex catalogs, multi-currency transactions, and custom ERP integrations.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Web Design Process -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <div class="badge-text">HOW WE WORK</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Our Web Design Process</h3>
+          <p>We’ve refined this process over hundreds of projects. It’s how we keep things moving without cutting corners.</p>
+        </div>
+
+        <div class="wd-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));">
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">01 / Web Strategy</h4>
+            <p>Before anything gets built, we learn your business goals, audience, and competition to put together a growth plan.</p>
+          </div>
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">02 / Planning & Architecture</h4>
+            <p>Mapping sitemaps, user flows, and technical requirements for flawless navigation.</p>
+          </div>
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">03 / Messaging & Conversion</h4>
+            <p>Crafting persuasive copy and value propositions aligned with buyer intent.</p>
+          </div>
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">04 / Wireframes & UX Design</h4>
+            <p>Designing intuitive interfaces and engaging visual layouts tailored to your brand.</p>
+          </div>
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">05 / Custom Development</h4>
+            <p>Writing clean, lightning-fast code optimized for mobile and desktop.</p>
+          </div>
+          <div class="wd-card" style="padding: 1.8rem;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 0.5rem; font-size: 1.1rem;">06 / QA & Optimization</h4>
+            <p>Rigorously testing performance, security, and launch readiness.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Your Business Needs Custom Web Design Services -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Why Your Business Needs Custom Web Design Services</h3>
+          <p>Stand out, rank higher, and convert more visitors with purpose-built digital experiences.</p>
+        </div>
+
+        <div class="wd-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">01</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Your Brand Doesn’t Fit A Template</h4>
+            <p>Templates check boxes but fail to communicate what makes you different. Custom web design gives you control over every detail.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">02</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">A Site That Works As Hard As Your Sales Team</h4>
+            <p>Looking good isn’t enough. Our UX is designed to move people through your funnel instead of letting them bounce.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">03</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">SEO That’s Built In</h4>
+            <p>Page speed, site structure, and URL architecture play a huge role in search rankings. We build search performance into the foundation.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">04</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Mobile-First Because Your Audience Is</h4>
+            <p>More than half your traffic comes from phones. We design for mobile first and scale up for flawless performance on every screen.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">05</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Stand Out In Your Market</h4>
+            <p>If your site looks generic, people will leave. We build sites reflecting what your business brings to the table.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem;">
+            <div style="font-size: 1.8rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.8rem;">06</div>
+            <h4 style="color: #fff; margin-bottom: 0.8rem; font-size: 1.2rem;">Deep Industry Experience</h4>
+            <p>A solid foundation that expands as your business grows without needing to scrap and rebuild in 18 months.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- What Sets Us Apart -->
+      <div style="margin-top: 5rem; background: #090e22; border: 1px solid rgba(0, 175, 233, 0.3); border-radius: 12px; padding: 4rem 3rem;">
+        <div class="section-title">
+          <div class="badge-text">WHY COMPANIES CHOOSE US</div>
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">What Sets Us Apart?</h3>
+          <p>We don’t just build your site and hand over the keys. We stay involved from the first conversation through launch and beyond.</p>
+        </div>
+
+        <div class="wd-grid" style="grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));">
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.2rem;">Experience That Shows In The Work</h4>
+            <p>Our team brings decades of cross-industry experience in eCommerce, SaaS, healthcare, and energy to every project.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.2rem;">Clients Who Come Back</h4>
+            <p>Long-term partnerships built on transparent communication, measurable ROI, and consistent delivery.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.2rem;">We Own The Project So You Don’t Have To</h4>
+            <p>Dedicated project management ensuring smooth execution, milestone tracking, and zero friction for your internal team.</p>
+          </div>
+          <div class="wd-card" style="padding: 2rem; background: #131848;">
+            <h4 style="color: var(--dst-primary-3); margin-bottom: 1rem; font-size: 1.2rem;">Everything Under One Roof</h4>
+            <p>Strategy, UX design, custom development, SEO, and copywriting unified under one expert team and timeline.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Web Design FAQs -->
+      <div style="margin-top: 5rem;">
+        <div class="section-title">
+          <h3 style="font-size: 2.2rem; text-transform: uppercase;">Custom Web Design FAQs</h3>
+          <p>Common questions about our web design process, platforms, and post-launch support.</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 1.5rem;">
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How long should I expect a web design project to take?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">A standard custom web design and development project typically ranges between 8 to 12 weeks from initial discovery to final launch.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How does EquivoraDigital handle scope creep when requirements change mid-project?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">We maintain transparent change-request protocols, evaluating impacts on timeline and budget collaboratively before implementing new features.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">What is the EquivoraDigital testing process before a website goes live?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">Comprehensive QA including cross-browser checks, mobile responsiveness testing, speed optimization audits, and security vulnerability scans.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">Does EquivoraDigital use custom themes or rely on templates?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">We build 100% custom-coded themes and layouts tailored specifically to your brand identity, ensuring unique positioning and speed.</p>
+          </div>
+          <div style="background: #131848; border: 1px solid rgba(255,255,255,0.08); padding: 2rem; border-radius: 8px;">
+            <h4 style="color: #fff; margin-bottom: 0.5rem; font-size: 1.1rem;">How do you transfer knowledge to the brand team once the site launches?</h4>
+            <p style="opacity: 0.85; font-size: 0.92rem;">We provide recorded video walkthroughs, comprehensive documentation, and live training sessions for your internal team.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 5. Clients Section -->
+  <!-- Clients Section -->
   <section id="clients" class="clients-section">
     <div>
       <div class="section-title">
-        <h2>Our Valued Clients</h2>
-        <p>We partner with forward-thinking enterprises, industry leaders, and high-growth brands across sectors.</p>
+        <h2>Companies Served</h2>
+        <p style="font-size: 1.2rem; font-weight: 600; color: var(--dst-primary-3); margin-top: 0.5rem;">We’re trusted by world-class companies.</p>
+        <p style="margin-top: 0.8rem;">EquivoraDigital has had the privilege of working with some of the biggest names in business as well as many exciting entrepreneurial and start-up companies.</p>
       </div>
-      <div class="clients-grid">
-        <div class="client-card">
-          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Apex Global Logistics" class="card-img">
-          <div class="client-card-content">
-            <span class="client-industry">Global Logistics</span>
-            <h3>Apex Global Logistics</h3>
-            <p>Partnered on international brand standards, digital PR, and multi-market digital campaigns across 14 global offices.</p>
+
+      <!-- Companies Logos Grid -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Puma</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Mitsui Plastics</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">RE/MAX</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">TRC Healthcare</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Bang & Olufsen</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Acqualina</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Babies R Us</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">G2 Esports</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">National Aviation</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Miami Country Day School</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">HP</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Ventura Foods</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">NFL</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Procter & Gamble</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">NYU</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Sony</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Ziptie</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">IBM</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Rollink</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Northwestern University</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Paul Stuart</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Absolute Dogs</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">S&B Spar Bernstein</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Xerox</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">AAMCO</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Zorro</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Bethpage</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Massimo Motor</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Always Best Care</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Hexcel</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Anrky</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">iS Clinical Education</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Learning Tree International</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Modula</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Vigilant IOE</div>
+        <div style="background: #131848; padding: 1.5rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); text-align: center; font-weight: 600;">Sobo & Sobo</div>
+      </div>
+
+      <!-- Call to Action Banner -->
+      <div style="background: rgba(19, 24, 72, 0.8); border: 1px solid rgba(0,175,233,0.3); padding: 2.5rem; border-radius: 12px; margin-bottom: 4rem; text-align: center;">
+        <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: #fff;">Ready to discuss your project?</h3>
+        <a href="#contact" class="cta-btn">Request a Quote</a>
+      </div>
+
+      <!-- We Serve All Industries -->
+      <div class="section-title" style="margin-top: 4rem;">
+        <h3>We Serve All Industries</h3>
+        <p>We stay on top of your industry by being experts in yours.</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-bottom: 3rem;">
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">B2B</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">B2C</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">Ecommerce</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">Enterprise</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">Education</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">Non-profit</span>
+        <span style="background: #131848; padding: 0.6rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(0,175,233,0.3);">Startups</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; text-align: left; max-width: 1000px; margin: 0 auto;">
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Automotive & Transportation</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Education & University</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Manufacturing</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Construction</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Energy</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Real Estate</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Consumer Goods & Product</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Finance & Banking</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Restaurant</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Corporate</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Food & Beverage</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Healthcare & Medical</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Software & Tech</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Law Firm</div>
+        <div style="background: #131848; padding: 1rem 1.5rem; border-radius: 6px; border: 1px solid rgba(255,255,255,0.06);">Sports & Entertainment</div>
+      </div>
+    </div>
+  </section>
+  <!-- Case Studies Section with Enhanced Details -->
+  <section id="cases" class="case-studies-section">
+    <div>
+      <div class="section-title" style="margin-bottom: 2rem;">
+        <h2>Case Studies</h2>
+        <p style="font-size: 1.2rem; font-weight: 600; color: var(--dst-primary-3);">We Focus On Driving Measurable Results</p>
+        <div style="margin-top: 1.5rem;">
+          <a href="#contact" class="cta-btn">Request a quote</a>
+        </div>
+      </div>
+
+      <!-- Filter Controls Bar -->
+      <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 3.5rem; background: #131848; padding: 1.2rem; border-radius: 8px; border: 1px solid rgba(0,175,233,0.2);">
+        <div>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--dst-primary-3); font-weight: 700; display: block; margin-bottom: 4px;">Services</span>
+          <select style="background: #060a18; color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 4px; font-family: inherit;">
+            <option>All services</option>
+          </select>
+        </div>
+        <div>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--dst-primary-3); font-weight: 700; display: block; margin-bottom: 4px;">Categories</span>
+          <select style="background: #060a18; color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 4px; font-family: inherit;">
+            <option>All categories</option>
+          </select>
+        </div>
+        <div>
+          <span style="font-size: 0.8rem; text-transform: uppercase; color: var(--dst-primary-3); font-weight: 700; display: block; margin-bottom: 4px;">Industries</span>
+          <select style="background: #060a18; color: #fff; border: 1px solid rgba(255,255,255,0.1); padding: 0.5rem 1rem; border-radius: 4px; font-family: inherit;">
+            <option>All industries</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Case Studies Portfolio Grid with Expanded Content -->
+      <div class="case-grid">
+        <!-- 1. CSM Truck -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=800&q=80" alt="CSM Truck background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">CSM Truck Logo & Identity</div>
+            <h3>Turning Every Truck And Every Location Into A Lead</h3>
+            <p><strong>Challenge:</strong> CSM Truck operated multiple regional service yards with fragmented digital footprints that failed to capture high-value commercial fleet inquiries.</p>
+            <p><strong>Solution:</strong> We engineered a unified, location-first multi-site architecture equipped with dynamic inventory listings, localized SEO funnels, and streamlined quote request workflows.</p>
+            <div class="case-stats">Impact: +180% Commercial Lead Generation</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
           </div>
         </div>
-        <div class="client-card">
-          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Kinetix Health Partners" class="card-img">
-          <div class="client-card-content">
-            <span class="client-industry">Healthcare Partners</span>
-            <h3>Kinetix Health Partners</h3>
-            <p>Provided patient-centric portal architecture, local search optimization, and reputation management systems.</p>
+
+        <!-- 2. Mastrex -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Mastrex background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Mastrex Brand Architecture</div>
+            <h3>Making Industrial Metal 3D Printing Easy To Understand And Buy</h3>
+            <p><strong>Challenge:</strong> Complex engineering specifications for industrial metal 3D printers created steep friction for prospective manufacturing buyers.</p>
+            <p><strong>Solution:</strong> We simplified the user journey by introducing interactive material selectors, clear application-based navigation, and high-clarity technical visualization assets.</p>
+            <div class="case-stats">Impact: 3x Increase in Qualified RFQs</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
           </div>
         </div>
-        <div class="client-card">
-          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="PrimeEstate Properties" class="card-img">
-          <div class="client-card-content">
-            <span class="client-industry">Luxury Real Estate</span>
-            <h3>PrimeEstate Properties</h3>
-            <p>Executed high-end visual branding and hyper-targeted geo-fenced social campaigns for exclusive real estate listings.</p>
+
+        <!-- 3. Gehrke Law -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80" alt="gehrke law background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Gehrke Law Practice Launch</div>
+            <h3>Launching A New Law Practice For Clients Who Need Answers Fast</h3>
+            <p><strong>Challenge:</strong> A newly formed law practice needed immediate regional visibility and an authoritative digital platform to capture urgent legal consultations.</p>
+            <p><strong>Solution:</strong> Delivered a high-performance legal website featuring mobile-optimized click-to-call funnels, rapid-response consultation booking forms, and geo-targeted SEO campaigns.</p>
+            <div class="case-stats">Impact: Full Client Roster in First 90 Days</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
           </div>
         </div>
-        <div class="client-card">
-          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Veritas Consulting" class="card-img">
-          <div class="client-card-content">
-            <span class="client-industry">Advisory & Consulting</span>
-            <h3>Veritas Consulting</h3>
-            <p>Developed authoritative corporate web presence, interactive advisory modules, and streamlined client intake workflows.</p>
+
+        <!-- 4. Toho Intl -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=800&q=80" alt="Toho Intl background ver 2" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Toho International (Godzilla Studio)</div>
+            <h3>A Corporate Home For The Studio Behind Godzilla</h3>
+            <p><strong>Challenge:</strong> The legendary entertainment studio needed a commanding global web presence to honor its cinematic legacy while managing international licensing partnerships.</p>
+            <p><strong>Solution:</strong> Built an immersive, cinematic brand portal combining archival storytelling, dynamic asset galleries, and secure B2B partner portals.</p>
+            <div class="case-stats">Impact: Global Brand Authority & Streamlined Licensing</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
           </div>
         </div>
+
+        <!-- 5. Gallery Systems -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=800&q=80" alt="gallery systems background 2" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Gallery Systems Brand Consolidation</div>
+            <h3>Consolidating Three Brand Sites Into One Category-Leading Domain</h3>
+            <p><strong>Challenge:</strong> Operating across three separate domains diluted search authority and created user confusion across museum and art collection software products.</p>
+            <p><strong>Solution:</strong> Executed a seamless domain migration and content consolidation strategy, merging all properties into a unified, high-performance architecture.</p>
+            <div class="case-stats">Impact: +210% Organic Search Visibility</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Integrity Electrical Services -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=800&q=80" alt="integrity electrical services background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Integrity Electrical Services</div>
+            <h3>A Website Built To Pre-Qualify A $100M Contractor In Under A Minute</h3>
+            <p><strong>Challenge:</strong> A premier electrical contractor was overwhelmed by unqualified residential inquiries while trying to secure multi-million dollar commercial bids.</p>
+            <p><strong>Solution:</strong> Designed an intuitive dual-funnel website with an automated project pre-qualification quiz that instantly segments residential vs. enterprise commercial leads.</p>
+            <div class="case-stats">Impact: 75% Reduction in Unqualified Calls</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Juise Mobility -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=800&q=80" alt="juise mobility background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Juise Mobility Platform</div>
+            <h3>Building The Case For Infrastructure In A Market That Has None</h3>
+            <p><strong>Challenge:</strong> Introducing EV charging solutions into emerging regions required educating both commercial property owners and consumers from scratch.</p>
+            <p><strong>Solution:</strong> Developed an educational content hub, ROI calculator tools, and persuasive pitch decks integrated directly into a sleek, high-converting digital platform.</p>
+            <div class="case-stats">Impact: Market Category Leadership & Rapid Adoption</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Surely Dirty -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80" alt="surely dirty background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Surely Dirty Beverage Brand</div>
+            <h3>Crafting A Ready-To-Drink Brand From A Single Idea</h3>
+            <p><strong>Challenge:</strong> Transforming a novel beverage concept into a shelf-ready and DTC-optimized brand with zero prior market presence.</p>
+            <p><strong>Solution:</strong> Created a vibrant visual identity, custom packaging guidelines, and a Shopify Plus store optimized for high-velocity direct-to-consumer sales.</p>
+            <div class="case-stats">Impact: Successful Nationwide Launch & Sold-Out Batches</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Zorro Productions -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Zorro Productions featured image" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Zorro Productions Franchise Hub</div>
+            <h3>Making A Digital Home For A Century-Old Entertainment Franchise</h3>
+            <p><strong>Challenge:</strong> A century-old literary and cinematic icon required a modern digital archive that engaged fans while streamlining global trademark licensing.</p>
+            <p><strong>Solution:</strong> Designed an interactive historical timeline, vibrant character showcases, and a secure B2B licensing portal.</p>
+            <div class="case-stats">Impact: +150% Fan Engagement & Global Licensing Growth</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Clearinghouse CDFI -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="clearinghouse cdfi background" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Clearinghouse CDFI Portal</div>
+            <h3>A Website That Screens Borrowers Before The Lending Team Does</h3>
+            <p><strong>Challenge:</strong> Managing high volumes of commercial loan applications strained internal underwriting resources with ineligible submissions.</p>
+            <p><strong>Solution:</strong> Built customized borrower and investor portals featuring automated pre-screening logic that routes qualified applications directly into Salesforce.</p>
+            <div class="case-stats">Impact: +87% Organic Traffic & 60% Faster Loan Processing</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Global Logistics -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Two business professionals reviewing information together on a laptop" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Global Logistics Modernization</div>
+            <h3>Modernizing A Global Logistics Brand From The Ground Up</h3>
+            <p><strong>Challenge:</strong> An international shipping enterprise suffered from legacy web infrastructure that failed to reflect their modern technological capabilities.</p>
+            <p><strong>Solution:</strong> Overhauled brand positioning, crafted a lightning-fast responsive web interface, and integrated real-time shipment tracking portals.</p>
+            <div class="case-stats">Impact: 99.9% Uptime & 2.5x Enterprise Inquiry Growth</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Remax We Sell Paradise -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="remax we sell paradise cover for case studies" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">RE/MAX Paradise Real Estate</div>
+            <h3>A Property Platform Built for Paradise</h3>
+            <p><strong>Challenge:</strong> Luxury real estate listings in prime tropical markets lacked an immersive digital search experience for high-net-worth international buyers.</p>
+            <p><strong>Solution:</strong> Developed a high-end property portal with advanced MLS integration, virtual tour capabilities, and streamlined agent connection workflows.</p>
+            <div class="case-stats">Impact: +240% Property Inquiry Conversions</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. G2 eSports -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="G2 eSports cover" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">G2 Esports Platform</div>
+            <h3>Unifying Shop and Fandom With a Modular eCommerce Platform</h3>
+            <p><strong>Challenge:</strong> A leading global competitive gaming organization needed to bridge content, community fandom, and merchandise sales without friction.</p>
+            <p><strong>Solution:</strong> Designed a modular eCommerce and content hub that seamlessly connects fan loyalty with high-speed apparel and gear purchases.</p>
+            <div class="case-stats">Impact: Record Merchandise Sales & Increased Fan Retention</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Northwestern University -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=800&q=80" alt="Northwestern University cover" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Northwestern University Journalism</div>
+            <h3>Elevating a Journalism Legacy for a Digital Audience</h3>
+            <p><strong>Challenge:</strong> Translating a prestigious academic journalism program into an engaging digital platform that attracts prospective students globally.</p>
+            <p><strong>Solution:</strong> Restructured academic information architecture into intuitive prospective student pathways backed by rich multimedia storytelling.</p>
+            <div class="case-stats">Impact: +95% Prospective Student Engagement</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15. Vigilantioe -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Industrial refinery at night" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">Vigilantioe IoE Redesign</div>
+            <h3>Simplifying A Complex IoE Brand With A Website Redesign</h3>
+            <p><strong>Challenge:</strong> Advanced industrial IoT solutions suffered from overly technical messaging that failed to communicate clear operational ROI.</p>
+            <p><strong>Solution:</strong> Streamlined brand positioning, created modular product pages, and developed interactive ROI calculators for industrial decision-makers.</p>
+            <div class="case-stats">Impact: 3x Increase in Demo Requests</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16. iS CLINICAL -->
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=800&q=80" alt="isclinical cs cover" class="card-img">
+          <div class="case-content">
+            <div style="margin-bottom: 0.5rem; font-weight: 700; font-size: 0.85rem; color: var(--dst-primary-3);">iS CLINICAL Education Platform</div>
+            <h3>Turning Product Education Into a Scalable Learning Platform</h3>
+            <p><strong>Challenge:</strong> Skincare professionals and consumers needed deep scientific education regarding medical-grade formulations without overwhelming drop-off.</p>
+            <p><strong>Solution:</strong> Built an interactive, scalable learning portal combining video modules, ingredient glossaries, and seamless product integration.</p>
+            <div class="case-stats">Impact: +320% Completed Certifications & Higher Retail Sales</div>
+            <div style="margin-top: 1.5rem;">
+              <a href="#contact" class="cta-btn" style="display: inline-block; text-align: center; width: 100%;">View Case Study</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination Navigation -->
+      <div style="display: flex; justify-content: center; align-items: center; gap: 0.8rem; margin-top: 4rem;">
+        <span style="width: 38px; height: 38px; background: var(--dst-primary-3); color: #060a18; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700;">1</span>
+        <a href="#cases" style="width: 38px; height: 38px; background: #131848; color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">2</a>
+        <a href="#cases" style="width: 38px; height: 38px; background: #131848; color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">3</a>
+        <span style="color: #888; padding: 0 0.5rem;">...</span>
+        <a href="#cases" style="width: 38px; height: 38px; background: #131848; color: #fff; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-weight: 700; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">7</a>
+      </div>
+
+      <!-- Selected Client Outcomes Section -->
+      <div style="margin-top: 6rem; background: #131848; border: 1px solid rgba(0,175,233,0.3); border-radius: 12px; padding: 4rem 3rem; text-align: center;">
+        <span class="badge-text">Selected Client Outcomes</span>
+        <h3 style="font-size: 2.2rem; text-transform: uppercase; margin-bottom: 1rem; color: #fff;">Measured Digital Growth</h3>
+        <p style="opacity: 0.85; max-width: 700px; margin: 0 auto 3rem auto;">A snapshot of measurable results delivered through strategy, design, technology and performance marketing. Selected results from EquivoraDigital client case studies.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2.5rem; text-align: center;">
+          <div style="background: #060a18; padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 2.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.5rem;">14x</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; color: #fff;">Google Traffic In Six Months</div>
+            <div style="font-size: 0.8rem; opacity: 0.7;">spar_bernstein_logo</div>
+          </div>
+          <div style="background: #060a18; padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 2.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.5rem;">5x</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; color: #fff;">U.S. Revenue After Launch</div>
+            <div style="font-size: 0.8rem; opacity: 0.7;">rollink</div>
+          </div>
+          <div style="background: #060a18; padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 2.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.5rem;">700k</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; color: #fff;">New Customers Acquired</div>
+            <div style="font-size: 0.8rem; opacity: 0.7;">anrky-logo-white</div>
+          </div>
+          <div style="background: #060a18; padding: 2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08);">
+            <div style="font-size: 2.5rem; color: var(--dst-primary-3); font-weight: 800; margin-bottom: 0.5rem;">77%</div>
+            <div style="font-size: 0.85rem; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 1rem; color: #fff;">Traffic Growth In Six Months</div>
+            <div style="font-size: 0.8rem; opacity: 0.7;">Powr-logo-white</div>
+          </div>
+        </div>
+        <p style="margin-top: 2.5rem; font-size: 0.95rem; font-style: italic; color: var(--dst-primary-3);">Results built to compound.</p>
       </div>
     </div>
   </section>
 
-  <!-- 6. Case Studies Section -->
-  <section id="cases" class="case-studies-section">
-    <div>
-      <div class="section-title">
-        <h2>Successful Case Studies</h2>
-        <p>Proven track record of driving monumental growth and engagement for our partners.</p>
-      </div>
-      <div class="case-grid">
-        <div class="case-card">
-          <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" alt="Apex Financial Group" class="card-img">
-          <div class="case-content">
-            <h3>Apex Financial Group</h3>
-            <p><strong>Challenge:</strong> Low online visibility and high customer acquisition costs in a competitive financial sector.</p>
-            <p><strong>Solution:</strong> Complete brand repositioning combined with targeted multi-channel performance advertising.</p>
-            <div class="case-stats">+240% Inbound Lead Growth | -35% CAC</div>
-          </div>
-        </div>
-        <div class="case-card">
-          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Vanguard Tech Solutions" class="card-img">
-          <div class="case-content">
-            <h3>Vanguard Tech Solutions</h3>
-            <p><strong>Challenge:</strong> Fragmented messaging and lack of structured engagement across digital channels.</p>
-            <p><strong>Solution:</strong> Crafted a refreshed visual identity system and executed a high-impact social media content strategy.</p>
-            <div class="case-stats">3.5x Social Engagement | 180% Pipeline Increase</div>
-          </div>
-        </div>
-        <div class="case-card">
-          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" alt="Lumina Retail Brands" class="card-img">
-          <div class="case-content">
-            <h3>Lumina Retail Brands</h3>
-            <p><strong>Challenge:</strong> Stagnant e-commerce conversions and poor retention through organic channels.</p>
-            <p><strong>Solution:</strong> Developed full-funnel lifecycle marketing campaigns and optimized performance creative assets.</p>
-            <div class="case-stats">+310% E-Commerce ROAS | 45% Repeat Buyer Lift</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+
 </main>
 
 <!-- Contact Modal Overlay -->
@@ -2135,12 +3451,24 @@
     <p id="modalDesc">Fill out the form below and our team will get back to you within 24 hours.</p>
     <form id="strategyForm" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted.'); closeModal();">
       <div class="form-group">
-        <label for="name">Full Name</label>
+        <label for="name">Full Name *</label>
         <input type="text" id="name" required placeholder="John Doe">
       </div>
       <div class="form-group">
-        <label for="email">Business Email</label>
+        <label for="company">Company Name *</label>
+        <input type="text" id="company" required placeholder="Company LLC">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address *</label>
         <input type="email" id="email" required placeholder="john@company.com">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" required placeholder="(571) 484-2138">
+      </div>
+      <div class="form-group">
+        <label for="projectGoals">Tell Us About Your Project And Goals *</label>
+        <input type="text" id="projectGoals" required placeholder="Describe your project & goals...">
       </div>
       <div class="form-group" id="serviceGroup">
         <label for="service">Interested Service</label>
@@ -2148,9 +3476,10 @@
           <option>Digital Marketing</option>
           <option>Web Design</option>
           <option>Brand Strategy</option>
+          <option>Logo Design</option>
         </select>
       </div>
-      <button type="submit" class="cta-btn" id="modalSubmitBtn" style="width: 100%; border: none;">Submit Request</button>
+      <button type="submit" class="cta-btn" id="modalSubmitBtn" style="width: 100%; border: none;">Get My Proposal</button>
     </form>
   </div>
 </div>
@@ -2167,13 +3496,11 @@
     hamburgerBtn.classList.toggle('active');
   });
 
-  // Responsive dropdown toggle on click (mobile & touch devices)
   navDropdowns.forEach(drop => {
     const parentLink = drop.querySelector('a');
     parentLink.addEventListener('click', (e) => {
       if (window.innerWidth <= 1024) {
         e.preventDefault();
-        // Close other open dropdowns
         navDropdowns.forEach(other => {
           if (other !== drop) other.classList.remove('mobile-open');
         });
@@ -2182,17 +3509,12 @@
     });
   });
 
-  // Close mobile nav when clicking any actual link (sub-item or regular link)
   allNavLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const parentLi = link.parentElement;
-      // If it's a mobile dropdown parent click, let the dropdown toggle handler take over
       if (window.innerWidth <= 1024 && parentLi.classList.contains('dropdown') && link.getAttribute('href').startsWith('#') && parentLi.querySelector('.dropdown-menu')) {
-        // Handled by dropdown click listener above
         return;
       }
-
-      // Otherwise close mobile navigation overlay
       if (window.innerWidth <= 1024) {
         mainNav.classList.remove('active');
         hamburgerBtn.classList.remove('active');
@@ -2238,19 +3560,17 @@
   const payNowBtn = document.getElementById('payNowBtn');
   const clientLoginBtn = document.getElementById('clientLoginBtn');
 
-  // Strategy Call Modal
   ctaButtons.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       modalTitle.textContent = "Book Your Strategy Call";
       modalDesc.textContent = "Fill out the form below and our team will get back to you within 24 hours.";
       serviceGroup.style.display = "block";
-      modalSubmitBtn.textContent = "Submit Request";
+      modalSubmitBtn.textContent = "Get My Proposal";
       modal.classList.add('active');
     });
   });
 
-  // Pay Now Interactive Modal
   payNowBtn.addEventListener('click', (e) => {
     e.preventDefault();
     modalTitle.textContent = "Secure Invoice Payment";
@@ -2260,7 +3580,6 @@
     modal.classList.add('active');
   });
 
-  // Client Login Interactive Modal
   clientLoginBtn.addEventListener('click', (e) => {
     e.preventDefault();
     modalTitle.textContent = "Client Portal Login";
@@ -2288,23 +3607,18 @@
         <h4>EquivoraDigital</h4>
         <p>Award-winning digital marketing and branding agency accelerating growth through strategic SEO, performance PPC, social media management, and high-impact web design.</p>
         <div class="footer-social-icons">
-          <!-- X (Twitter) -->
           <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="X">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
           </a>
-          <!-- Facebook -->
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <!-- YouTube -->
           <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
-          <!-- TikTok -->
           <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="TikTok">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FE2C55"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.22-2.45.62-4.91 2.3-6.68 1.55-1.62 3.79-2.52 6.02-2.43.12.01.24.02.36.04v4.05c-.32-.11-.66-.17-1-.18-1.07-.05-2.14.42-2.79 1.25-.61.76-.78 1.78-.46 2.7.32.92 1.14 1.58 2.12 1.72.97.14 2.01-.15 2.63-.91.31-.38.48-.86.49-1.35.03-3.03.02-6.07.03-9.11 0-2.03-.01-4.06.01-6.09z"/></svg>
           </a>
-          <!-- LinkedIn -->
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
           </a>
