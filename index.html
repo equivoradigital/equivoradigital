@@ -1,0 +1,2358 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Marketing & Branding Agency | EquivoraDigital</title>
+  <meta name="description" content="EquivoraDigital accelerates growth through strategic digital marketing, brand positioning, social media management, and high-impact campaigns."/>
+  <meta name="robots" content="follow, index"/>
+  <link rel="icon" type="image/x-icon" href="https://equivorasoftware.com/favicon.ico">
+  <style>
+    :root {
+      --dst-primary-1: #005b95;
+      --dst-primary-2: #004a83;
+      --dst-primary-3: #00afe9;
+      --dst-secondary-1: #060a18;
+      --dst-secondary-2: #131848;
+      --dst-secondary-3: #9737e6;
+      --dst-text-color: #ffffff;
+      --dst-font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #060a18;
+      color: var(--dst-text-color);
+      font-family: var(--dst-font-family);
+      line-height: 1.6;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* --- Header --- */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      background: rgba(6, 10, 24, 0.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* --- Top Meta Bar --- */
+    .header-top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.5rem 3%;
+      background: rgba(255, 255, 255, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.8rem;
+    }
+
+    .header-top-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .header-top-left-socials {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .top-social-icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .top-social-icon-link svg {
+      width: 12px;
+      height: 12px;
+    }
+
+    .top-social-icon-link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .header-top-right-links {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+    }
+
+    .header-top-right-links a {
+      color: #cbd5e1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    .header-top-right-links a svg {
+      width: 15px;
+      height: 15px;
+      flex-shrink: 0;
+    }
+
+    .header-top-right-links a:hover {
+      color: var(--dst-primary-3);
+    }
+
+    .header-top-right-links span {
+      opacity: 0.4;
+    }
+
+    /* --- Main Header Navigation Bar --- */
+    .header-main-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 3%;
+      gap: 1rem;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .header-left-group {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      flex-wrap: nowrap;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      flex-shrink: 0;
+    }
+
+    .logo-icon {
+      width: 34px;
+      height: 34px;
+      background: linear-gradient(135deg, #00afe9 0%, #9737e6 100%);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 15px rgba(0, 175, 233, 0.4);
+      flex-shrink: 0;
+    }
+
+    .logo-icon svg {
+      width: 20px;
+      height: 20px;
+      fill: #060a18;
+    }
+
+    .logo-equivora {
+      color: #ffffff;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    .logo-digital {
+      color: var(--dst-primary-3);
+      background: linear-gradient(135deg, #00afe9 0%, #9737e6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 800;
+    }
+
+    .accent-letter {
+      color: #9737e6;
+      background: linear-gradient(135deg, #00afe9 20%, #9737e6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: 900;
+      display: inline-block;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 1.2rem;
+      align-items: center;
+    }
+
+    /* --- Dropdown Styles --- */
+    nav ul li.dropdown {
+      position: relative;
+    }
+
+    nav ul li.dropdown > a {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    nav ul li.dropdown > a::after {
+      content: "▾";
+      font-size: 0.7rem;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(13, 19, 43, 0.98);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 175, 233, 0.2);
+      border-radius: 6px;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+      list-style: none;
+      padding: 0.5rem 0;
+      min-width: 220px;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+      z-index: 1005;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    nav ul li.dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    nav ul li.dropdown:hover > a::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-menu li {
+      width: 100%;
+    }
+
+    .dropdown-menu a {
+      padding: 0.6rem 1rem;
+      display: block;
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      white-space: nowrap;
+      transition: background 0.2s ease, color 0.2s ease;
+      text-decoration: none;
+    }
+
+    .dropdown-menu a:hover {
+      background: rgba(0, 175, 233, 0.15);
+      color: var(--dst-primary-3);
+    }
+
+    nav a {
+      color: #e2e8f0;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.82rem;
+      transition: color 0.3s ease;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: var(--dst-primary-3);
+    }
+
+    /* --- Header Right Group & Action Elements --- */
+    .header-right-group {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: nowrap;
+    }
+
+    /* --- Hamburger Menu Button --- */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 21px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+      padding: 0;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 3px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .hamburger.active span:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+
+    .cta-btn {
+      background: #00afe9;
+      color: #060a18;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 175, 233, 0.3);
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .cta-btn:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(255, 255, 255, 0.4);
+    }
+
+    main {
+      padding-top: 135px;
+    }
+
+    /* --- Home / Hero Section --- */
+    .hero {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5rem 5%;
+      min-height: 90vh;
+      gap: 4rem;
+      background: linear-gradient(135deg, rgba(6, 10, 24, 0.92), rgba(19, 24, 72, 0.85));
+      overflow: hidden;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .hero-content {
+      flex: 1;
+      max-width: 650px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 0.4rem 1rem;
+      background: rgba(0, 175, 233, 0.1);
+      border: 1px solid rgba(0, 175, 233, 0.3);
+      border-radius: 30px;
+      color: var(--dst-primary-3);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-content h1 {
+      font-size: clamp(2.2rem, 4vw, 4.2rem);
+      line-height: 1.08;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-content h1 span {
+      background: linear-gradient(135deg, #00afe9 0%, #9737e6 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-content p {
+      font-size: 1.12rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+
+    .hero-content ul {
+      list-style: none;
+      margin-bottom: 2.5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .hero-content li {
+      font-size: 0.95rem;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .hero-content li::before {
+      content: "→";
+      color: var(--dst-primary-3);
+      font-weight: bold;
+    }
+
+    .hero-media {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+      max-width: 520px;
+      width: 100%;
+    }
+
+    /* --- Slideshow Container --- */
+    .slideshow-container {
+      width: 100%;
+      background: #131848;
+      border: 1px solid rgba(0, 175, 233, 0.4);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.7), 0 0 30px rgba(0, 175, 233, 0.2);
+      position: relative;
+    }
+
+    .slide-item {
+      display: none;
+      position: relative;
+    }
+
+    .slide-item.active-slide {
+      display: block;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .slide-item img {
+      width: 100%;
+      height: 360px;
+      object-fit: cover;
+    }
+
+    .slide-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(6,10,24,0.95), rgba(6,10,24,0.6));
+      padding: 1.5rem;
+      text-align: left;
+    }
+
+    .slide-caption h3 {
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+      text-transform: uppercase;
+    }
+
+    .slide-caption p {
+      font-size: 0.82rem;
+      opacity: 0.9;
+      color: var(--dst-primary-3);
+      font-weight: 600;
+    }
+
+    .slide-number {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(6, 10, 24, 0.85);
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--dst-primary-3);
+      border: 1px solid rgba(0, 175, 233, 0.3);
+    }
+
+    .slide-nav-controls {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.8rem 1rem;
+      background: rgba(19, 24, 72, 0.95);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .slide-btn {
+      background: none;
+      color: #fff;
+      border: 1px solid rgba(0, 175, 233, 0.4);
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .slide-btn:hover {
+      background: var(--dst-primary-3);
+      color: #060a18;
+    }
+
+    /* --- Shared Section Styling --- */
+    section {
+      padding: 6rem 5%;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(1.8rem, 3vw, 2.8rem);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    .section-title p {
+      font-size: 1.05rem;
+      opacity: 0.8;
+      max-width: 750px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    /* --- About Section --- */
+    .about-section {
+      background: #090e22;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 100%;
+    }
+    .about-section > div:not(.section-title) {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-text h3 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .about-text p {
+      font-size: 1.05rem;
+      opacity: 0.85;
+      margin-bottom: 1.5rem;
+      line-height: 1.7;
+    }
+
+    .about-features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .about-feature-box {
+      background: #131848;
+      border: 1px solid rgba(0, 175, 233, 0.2);
+      padding: 1.5rem;
+      border-radius: 8px;
+    }
+
+    .about-feature-box h4 {
+      font-size: 1.1rem;
+      color: var(--dst-primary-3);
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+    }
+
+    .about-feature-box p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-bottom: 0;
+    }
+
+    .about-image img {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(0, 175, 233, 0.3);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    /* --- Branding Section --- */
+    .branding-section {
+      background: #060a18;
+      max-width: 100%;
+    }
+    .branding-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .branding-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .branding-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .branding-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dst-primary-3);
+      box-shadow: 0 20px 40px rgba(0, 175, 233, 0.15);
+    }
+
+    .branding-content {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .branding-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .branding-card p {
+      font-size: 0.92rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* --- Digital Marketing Section --- */
+    .digital-marketing-section {
+      background: #090e22;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 100%;
+    }
+    .digital-marketing-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .stats-banner {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .stat-box {
+      background: #131848;
+      border: 1px solid rgba(0, 175, 233, 0.2);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .stat-box h3 {
+      font-size: 2.2rem;
+      color: var(--dst-primary-3);
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+
+    .stat-box p {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      line-height: 1.5;
+    }
+
+    .dm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .dm-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dm-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dst-primary-3);
+      box-shadow: 0 20px 40px rgba(0, 175, 233, 0.15);
+    }
+
+    .dm-content {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .dm-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.8rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .dm-card p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* --- Digital Trends Section --- */
+    .digital-trends-section {
+      background: #060a18;
+      max-width: 100%;
+    }
+    .digital-trends-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .trends-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .trend-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .trend-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dst-secondary-3);
+      box-shadow: 0 20px 40px rgba(151, 55, 230, 0.15);
+    }
+
+    .trend-content {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .trend-tag {
+      font-size: 0.75rem;
+      color: var(--dst-secondary-3);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .trend-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .trend-card p {
+      font-size: 0.92rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* --- Web Design Section --- */
+    .web-design-section {
+      background: #090e22;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 100%;
+    }
+    .web-design-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .wd-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .wd-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wd-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dst-primary-3);
+      box-shadow: 0 20px 40px rgba(0, 175, 233, 0.15);
+    }
+
+    .wd-media {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .wd-info {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .wd-tag {
+      font-size: 0.75rem;
+      color: var(--dst-primary-3);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 0.6rem;
+    }
+
+    .wd-info h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      font-weight: 700;
+    }
+
+    .wd-info p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .wd-metric {
+      margin-top: auto;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--dst-primary-3);
+    }
+
+    /* --- Clients Section --- */
+    .clients-section {
+      background: #060a18;
+      text-align: center;
+      max-width: 100%;
+    }
+    .clients-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      text-align: left;
+    }
+
+    .client-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .client-card:hover {
+      border-color: var(--dst-primary-3);
+      transform: translateY(-5px);
+    }
+
+    .client-card-content {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .client-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+
+    .client-industry {
+      font-size: 0.78rem;
+      color: var(--dst-primary-3);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .client-card p {
+      font-size: 0.88rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    /* --- Case Studies Section --- */
+    .case-studies-section {
+      background: #090e22;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      max-width: 100%;
+    }
+    .case-studies-section > div {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+
+    .case-card {
+      background: #131848;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .case-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--dst-primary-3);
+      box-shadow: 0 20px 40px rgba(0, 175, 233, 0.15);
+    }
+
+    .case-content {
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .case-card h3 {
+      font-size: 1.35rem;
+      margin-bottom: 1rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .case-card p {
+      font-size: 0.92rem;
+      opacity: 0.8;
+      line-height: 1.6;
+    }
+
+    .case-card p strong {
+      color: var(--dst-primary-3);
+    }
+
+    .case-stats {
+      margin-top: 1.8rem;
+      padding-top: 1.2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-weight: 700;
+      color: var(--dst-primary-3);
+      font-size: 0.88rem;
+      letter-spacing: 0.5px;
+    }
+
+    /* --- Modal Overlay Styles --- */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(6, 10, 24, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-content {
+      background: #131848;
+      border: 1px solid rgba(0, 175, 233, 0.3);
+      padding: 2.5rem;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 500px;
+      position: relative;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+    }
+    .modal-close {
+      position: absolute;
+      top: 1rem; right: 1.2rem;
+      background: none; border: none;
+      color: #fff; font-size: 1.8rem;
+      cursor: pointer;
+    }
+    .modal-content h3 {
+      font-size: 1.5rem; margin-bottom: 0.5rem; color: #fff; text-transform: uppercase;
+    }
+    .modal-content p {
+      font-size: 0.9rem; opacity: 0.8; margin-bottom: 1.5rem;
+    }
+    .form-group {
+      margin-bottom: 1.2rem; text-align: left;
+    }
+    .form-group label {
+      display: block; font-size: 0.85rem; margin-bottom: 0.4rem; color: #e2e8f0; font-weight: 500;
+    }
+    .form-group input, .form-group select {
+      width: 100%; padding: 0.8rem; background: #060a18; border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px; color: #fff; font-family: inherit;
+    }
+    .form-group input:focus, .form-group select:focus {
+      outline: none; border-color: var(--dst-primary-3);
+    }
+
+    /* --- Professional Multi-Column Footer Styles --- */
+    footer {
+      background: #040711;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: var(--dst-text-color);
+      padding: 4rem 5% 2rem 5%;
+      font-size: 0.88rem;
+    }
+
+    .footer-container {
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col h4 {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .footer-col p {
+      opacity: 0.8;
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .footer-col ul a {
+      color: #cbd5e1;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.86rem;
+      transition: all 0.3s ease;
+      display: inline-block;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--dst-primary-3);
+      transform: translateX(4px);
+    }
+
+    /* --- Social Media Icons Bar in Footer --- */
+    .footer-social-icons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 1rem;
+    }
+
+    .social-icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    .social-icon-link svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .social-icon-link:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.82rem;
+      opacity: 0.75;
+    }
+
+    .footer-policy-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-policy-links a {
+      color: var(--dst-primary-3);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-policy-links a:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 1100px) {
+      .header-top-bar {
+        font-size: 0.72rem;
+        padding: 0.4rem 2%;
+      }
+      main {
+        padding-top: 145px;
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hamburger {
+        display: flex;
+      }
+
+      nav {
+        position: fixed;
+        top: 115px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 115px);
+        background: rgba(6, 10, 24, 0.98);
+        backdrop-filter: blur(16px);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 3rem;
+        transition: left 0.35s ease-in-out;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        display: flex;
+        overflow-y: auto;
+      }
+
+      nav.active {
+        left: 0;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 1.8rem;
+        width: 100%;
+        text-align: center;
+      }
+
+      nav ul li.dropdown {
+        width: 100%;
+      }
+
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin-top: 0.5rem;
+        display: none;
+      }
+
+      nav ul li.dropdown.mobile-open .dropdown-menu {
+        display: flex;
+      }
+
+      nav a {
+        font-size: 1.1rem;
+        font-weight: 600;
+        padding: 0.5rem 1rem;
+        display: block;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 6rem;
+      }
+      .hero-content ul {
+        justify-content: center;
+      }
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <!-- Dedicated Top Meta Bar with Left Socials and Right Meta Info -->
+  <div class="header-top-bar">
+    <div class="header-top-meta">
+      <!-- Top Left Social Icons in Original Colors -->
+      <div class="header-top-left-socials">
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="X">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="TikTok">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FE2C55"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.22-2.45.62-4.91 2.3-6.68 1.55-1.62 3.79-2.52 6.02-2.43.12.01.24.02.36.04v4.05c-.32-.11-.66-.17-1-.18-1.07-.05-2.14.42-2.79 1.25-.61.76-.78 1.78-.46 2.7.32.92 1.14 1.58 2.12 1.72.97.14 2.01-.15 2.63-.91.31-.38.48-.86.49-1.35.03-3.03.02-6.07.03-9.11 0-2.03-.01-4.06.01-6.09z"/></svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        </a>
+        <a href="https://business.google.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="Google Business Profile">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z" fill="#EA4335"/></svg>
+        </a>
+        <a href="https://spotify.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="Spotify">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1DB954"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.521 17.34c-.24.359-.72.48-1.08.24-2.999-1.8-6.78-2.22-11.22-1.2-.42.12-.84-.18-.96-.6-.12-.42.18-.84.6-.96 4.8-1.14 9.06-.66 12.48 1.56.36.24.48.72.24 1.08zm1.5-3.3c-.3 0.48-.9 0.66-1.38 0.36-3.42-2.1-8.64-2.72-12.66-1.47-.54.18-1.11-.12-1.29-.66-.18-.54.12-1.11.66-1.29 4.44-1.38 10.2-0.66 14.16 1.74.48.3.66.9.36 1.38zm.12-3.48C14.7 8.34 8.52 8.16 4.98 9.24c-.66.18-1.38-.18-1.56-.84-.18-.66.18-1.38.84-1.56 4.14-1.26 11.04-1.08 15.36 1.5.6.36.78 1.14.42 1.74-.36.6-1.14.78-1.74.42z"/></svg>
+        </a>
+        <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="Pinterest">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#E60023"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.399.165-1.493-.695-2.425-2.875-2.425-4.629 0-3.767 2.738-7.229 7.892-7.229 4.144 0 7.365 2.953 7.365 6.905 0 4.122-2.599 7.44-6.204 7.44-1.211 0-2.35-.63-2.738-1.372l-.745 2.842c-.269 1.036-1.004 2.332-1.497 3.123C9.59 23.834 10.772 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="top-social-icon-link" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        </a>
+      </div>
+
+      <!-- Top Right Meta Links -->
+      <div class="header-top-right-links">
+        <a id="payNowBtn" role="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#34A853"><path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+          Pay Now
+        </a>
+        <span>•</span>
+        <a href="mailto:info@equivoradigital.com">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#EA4335"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          info@equivoradigital.com
+        </a>
+        <span>•</span>
+        <a id="clientLoginBtn" role="button">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#4285F4"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+          Client Login
+        </a>
+        <span>•</span>
+        <a href="tel:5714842138">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FBBC05"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call 571-484-2138
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Navigation Row with Dropdown Items -->
+  <div class="header-main-bar">
+    <div class="header-left-group">
+      <a href="#home" class="logo">
+        <div class="logo-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <div><span class="logo-equivora">Equivora</span><span class="logo-digital">Digi<span class="accent-letter">t</span><span class="accent-letter">a</span>l</span></div>
+      </a>
+    </div>
+
+    <nav id="mainNav">
+      <ul>
+        <li class="dropdown">
+          <a href="#home" class="nav-link">Home</a>
+          <ul class="dropdown-menu">
+            <li><a href="#home">Global Expansion</a></li>
+            <li><a href="#home">Metropolitan Impact</a></li>
+            <li><a href="#home">Enterprise Scale</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#about" class="nav-link">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#about">Our Approach</a></li>
+            <li><a href="#about">Leadership Team</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#branding" class="nav-link">Branding</a>
+          <ul class="dropdown-menu">
+            <li><a href="#branding">Brand Positioning</a></li>
+            <li><a href="#branding">Visual Identity Systems</a></li>
+            <li><a href="#branding">Brand Guidelines</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#marketing" class="nav-link">Services</a>
+          <ul class="dropdown-menu">
+            <li><a href="#marketing">Search Engine Optimization</a></li>
+            <li><a href="#marketing">Paid Media & PPC</a></li>
+            <li><a href="#marketing">Email & Automation</a></li>
+            <li><a href="#marketing">Social Media Marketing</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#trends" class="nav-link">Trends</a>
+          <ul class="dropdown-menu">
+            <li><a href="#trends">AI Personalization</a></li>
+            <li><a href="#trends">Spatial & 3D Web</a></li>
+            <li><a href="#trends">Generative Search SEO</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#webdesign" class="nav-link">Web Design</a>
+          <ul class="dropdown-menu">
+            <li><a href="#webdesign">UI/UX & Portals</a></li>
+            <li><a href="#webdesign">Fintech Architecture</a></li>
+            <li><a href="#webdesign">E-Commerce Storefronts</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#clients" class="nav-link">Clients</a>
+          <ul class="dropdown-menu">
+            <li><a href="#clients">Global Logistics</a></li>
+            <li><a href="#clients">Healthcare Partners</a></li>
+            <li><a href="#clients">Luxury Real Estate</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#cases" class="nav-link">Case Studies</a>
+          <ul class="dropdown-menu">
+            <li><a href="#cases">Apex Financial Group</a></li>
+            <li><a href="#cases">Vanguard Tech Solutions</a></li>
+            <li><a href="#cases">Lumina Retail Brands</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="header-right-group">
+      <a href="#contact" class="cta-btn">Book a Strategy Call</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- Home Section with 45-Slide Carousel -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Award-Winning Digital Agency</div>
+      <h1>Growing Brands <span>Online</span></h1>
+      <p>Award-winning digital marketing agency taking a strategic approach to SEO, PPC, social, email, content and marketing automation to generate results for B2B, B2C, eCommerce and enterprise brands.</p>
+      <ul>
+        <li>Strategic Brand Identity</li>
+        <li>Performance Marketing</li>
+        <li>Social Media Growth</li>
+        <li>Omnichannel Campaigns</li>
+      </ul>
+      <a href="#contact" class="cta-btn">Start Getting Results</a>
+    </div>
+
+    <div class="hero-media">
+      <div class="slideshow-container">
+        <!-- 45 Slides -->
+        <div class="slide-item active-slide">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=1200&q=80" alt="Eiffel Tower Paris">
+          <div class="slide-caption">
+            <h3>Global Brand Expansion</h3>
+            <p>International SEO & Multi-Market Positioning</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1200&q=80" alt="New York Skyline">
+          <div class="slide-caption">
+            <h3>Metropolitan Impact</h3>
+            <p>Case Study: 14x Google Traffic in 6 Months (Spar & Bernstein)</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Team Brainstorming Meeting">
+          <div class="slide-caption">
+            <h3>Executive Brainstorming Session</h3>
+            <p>Funnel-First Strategy & Cross-Channel Alignment</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Nature Alpine Scenery">
+          <div class="slide-caption">
+            <h3>Sustainable Growth Landscapes</h3>
+            <p>Long-Term Organic Search & Content Authority</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1200&q=80" alt="Dubai Architecture">
+          <div class="slide-caption">
+            <h3>Enterprise Scale</h3>
+            <p>Global B2B Lead Generation & High-Ticket Conversions</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Client Strategy Meeting">
+          <div class="slide-caption">
+            <h3>Collaborative Client Alignment</h3>
+            <p>Dedicated Point People & Transparent Reporting</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Yosemite Valley Scenery">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Eco-Conscious Brand Narratives & Positioning</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80" alt="London Big Ben">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Case Study: +299% Engaged Sessions (AutogenAI)</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80" alt="Creative Workshop">
+          <div class="slide-caption">
+            <h3>Creative Design Workshop</h3>
+            <p>Custom Web Design & Conversion Rate Optimization</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?auto=format&fit=crop&w=1200&q=80" alt="Tokyo Neon Cityscape">
+          <div class="slide-caption">
+            <h3>Digital Innovation</h3>
+            <p>Cutting-Edge eCommerce Funnels & Multi-Platform ROAS</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Tropical Beach Nature">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Hospitality & Tourism Performance Marketing</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1541872703-74c5e44368f9?auto=format&fit=crop&w=1200&q=80" alt="Sydney Opera House">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Case Study: +1,375% Purchases (Learning Tree)</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=1200&q=80" alt="Executive Boardroom">
+          <div class="slide-caption">
+            <h3>Executive Boardroom Strategy</h3>
+            <p>B2B Enterprise Consulting & Growth Modeling</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80" alt="Forest Fog Nature">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Eco-Brand Storytelling & Content Strategy</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=1200&q=80" alt="Product Launch Meeting">
+          <div class="slide-caption">
+            <h3>Product Launch Strategy Meeting</h3>
+            <p>Case Study: +961% Marketing ROI (G Pen)</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=1200&q=80" alt="Mountain Snow Range">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>High-Altitude Performance & Resilience</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1513584684374-8bab748fbf90?auto=format&fit=crop&w=1200&q=80" alt="Venice Canals">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Fluid Omnichannel Customer Journeys</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80" alt="Agile Team Sprint">
+          <div class="slide-caption">
+            <h3>Agile Marketing Sprint</h3>
+            <p>Rapid SEO & Paid Media Optimization</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80" alt="Global Travel Map">
+          <div class="slide-caption">
+            <h3>Global Campaign Mapping</h3>
+            <p>International PPC & Multi-Currency Funnels</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1515260268569-9271009adfdb?auto=format&fit=crop&w=1200&q=80" alt="Singapore Skyline">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Secure Web Architecture & Financial Lead Generation</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=1200&q=80" alt="Client Presentation">
+          <div class="slide-caption">
+            <h3>Quarterly Performance Review</h3>
+            <p>Transparent ROI & Client Accountability</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80" alt="Norwegian Fjords">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Deep-Dive Technical Audits & Architecture</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?auto=format&fit=crop&w=1200&q=80" alt="San Francisco Golden Gate">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>SaaS Growth Marketing & User Engagement Overhauls</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1200&q=80" alt="Team Collaboration">
+          <div class="slide-caption">
+            <h3>Creative Collaboration Session</h3>
+            <p>Unified Creative & Media Buying Teams</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1509114397022-ed747cca3f65?auto=format&fit=crop&w=1200&q=80" alt="Autumn Nature Scenery">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Local Roots, Global Reach & Personalized Care</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1200&q=80" alt="Berlin Architecture">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Industrial B2B Lead Generation & Account-Based Marketing</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1200&q=80" alt="Data Analytics Meeting">
+          <div class="slide-caption">
+            <h3>Data Analytics & Attribution Review</h3>
+            <p>Advanced Funnel Tracking & Conversion Optimization</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1200&q=80" alt="Sunlit Forest Nature">
+          <div class="slide-caption">
+            <h3>Natural Growth</h3>
+            <p>Organic Search Domination & Sustainable Traffic</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?auto=format&fit=crop&w=1200&q=80" alt="Parisian Streetscape">
+          <div class="slide-caption">
+            <h3>Boutique Brand Elegance</h3>
+            <p>Luxury Home & Fragrance Shopify Rebuilds</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80" alt="Strategy Planning Workshop">
+          <div class="slide-caption">
+            <h3>Multi-Channel Strategy Workshop</h3>
+            <p>Integrated SEO, Paid Media, Email & Social</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1506197603052-3cc9c3a201bd?auto=format&fit=crop&w=1200&q=80" alt="Icelandic Waterfall Nature">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Clean, High-Impact Digital Architecture</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=1200&q=80" alt="Toronto Skyline">
+          <div class="slide-caption">
+            <h3>North American Expansion</h3>
+            <p>Cross-Border E-Commerce Growth & Bilingual Platforms</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" alt="Tech Brainstorm">
+          <div class="slide-caption">
+            <h3>Tech Stack Integration Meeting</h3>
+            <p>Marketing Automation & Klaviyo ROI</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Client Onboarding Sync">
+          <div class="slide-caption">
+            <h3>Client Onboarding & Goal Setting</h3>
+            <p>Funnel-First Discovery & Leak Detection</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Coding and Web Development">
+          <div class="slide-caption">
+            <h3>Custom Web Development Lab</h3>
+            <p>Mobile-First UI/UX & Speed Optimization</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Maldives Tropical Scenery">
+          <div class="slide-caption">
+            <h3>Resort & Hospitality Marketing</h3>
+            <p>Turning Traveler Interest into Direct Online Bookings</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=1200&q=80" alt="Strategy Alignment">
+          <div class="slide-caption">
+            <h3>B2B Lead Generation Sync</h3>
+            <p>80% Organic Growth in 3 Weeks for B2B Distributor</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Rocky Mountains Scenery">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Reaching the Pinnacle of Search Rankings</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=1200&q=80" alt="Chicago Skyline">
+          <div class="slide-caption">
+            <h3>Midwest Enterprise Hub</h3>
+            <p>Corporate Authority & Lead Gen Funnels</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="Final Review Meeting">
+          <div class="slide-caption">
+            <h3>Campaign Review & KPI Analysis</h3>
+            <p>Numbers That Matter & Verified Outcomes</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80" alt="Scenic Horizon">
+          <div class="slide-caption">
+            <h3></h3>
+            <p>Generative Search & Future-Proof Strategies</p>
+          </div>
+        </div>
+        <div class="slide-item">
+          <div class="slide-number"></div>
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="EquivoraDigital Vision">
+          <div class="slide-caption">
+            <h3>Your Growth Partner — EquivoraDigital</h3>
+            <p>Start Getting Results Today with Our Award-Winning Team</p>
+          </div>
+        </div>
+
+        <div class="slide-nav-controls">
+          <button class="slide-btn" onclick="prevSlide()">&#10094; Prev</button>
+          <button class="slide-btn" onclick="nextSlide()">Next &#10095;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div>
+      <div class="section-title">
+        <h2>About EquivoraDigital</h2>
+        <p>We are a forward-thinking digital marketing and branding powerhouse dedicated to accelerating growth for ambitious enterprises.</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h3>Driven by Strategy. Built for Results.</h3>
+          <p>At EquivoraDigital, we combine creative brand storytelling with rigorous data analytics, high-impact web design, and advanced marketing automation. Our multi-disciplinary team operates as an extension of your business, focusing on metrics that truly matter: revenue growth, customer acquisition efficiency, and long-term market authority.</p>
+          <p>Whether you are scaling an eCommerce brand, expanding enterprise software reach, or redefining your corporate positioning, our funnel-first approach ensures every touchpoint is optimized for conversion.</p>
+          <div class="about-features">
+            <div class="about-feature-box">
+              <h4>Data-Driven</h4>
+              <p>Transparent attribution and continuous optimization across all campaigns.</p>
+            </div>
+            <div class="about-feature-box">
+              <h4>Omnichannel</h4>
+              <p>Integrated SEO, paid ads, email, and social workflows under one team.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" alt="EquivoraDigital Team Collaboration">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. Strategic Branding & Identity Section -->
+  <section id="branding" class="branding-section">
+    <div>
+      <div class="section-title">
+        <h2>Strategic Branding & Identity</h2>
+        <p>Crafting powerful brand narratives, distinctive visual systems, and unforgettable market positioning that resonate with high-value audiences.</p>
+      </div>
+      <div class="branding-grid">
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Brand Positioning Strategy Session" class="card-img">
+          <div class="branding-content">
+            <h3>Brand Positioning & Strategy</h3>
+            <p>Define your unique market wedge, pinpoint ideal enterprise buyer personas, and craft messaging architectures that set you apart from competitors.</p>
+          </div>
+        </div>
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Visual Identity Systems & Design" class="card-img">
+          <div class="branding-content">
+            <h3>Visual Identity Systems</h3>
+            <p>Develop comprehensive design languages including bespoke typography, color systems, and elite collateral to establish immediate brand recall.</p>
+          </div>
+        </div>
+        <div class="branding-card">
+          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80" alt="Brand Guidelines & Governance" class="card-img">
+          <div class="branding-content">
+            <h3>Brand Guidelines & Governance</h3>
+            <p>Build meticulous style guides and scalable asset libraries that ensure absolute consistency across all global touchpoints and channels.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Digital Marketing Section -->
+  <section id="marketing" class="digital-marketing-section">
+    <div>
+      <div class="section-title">
+        <h2>Our Scope of Digital Marketing Services</h2>
+        <p>SEO, paid media, email and social, run by one team with one goal: growth you can measure.</p>
+      </div>
+
+      <!-- Verified Performance Banner -->
+      <div class="stats-banner">
+        <div class="stat-box">
+          <h3>14x</h3>
+          <p>Google Traffic in 6 Months for NY-based law firm (Spar & Bernstein)</p>
+        </div>
+        <div class="stat-box">
+          <h3>+299%</h3>
+          <p>Engaged Sessions for AI software company (AutogenAI)</p>
+        </div>
+        <div class="stat-box">
+          <h3>+1,375%</h3>
+          <p>Purchases for online courses company (Learning Tree)</p>
+        </div>
+        <div class="stat-box">
+          <h3>+961%</h3>
+          <p>Marketing ROI for eCommerce brand (G Pen)</p>
+        </div>
+      </div>
+
+      <!-- Scope of Digital Marketing Services Grid -->
+      <div class="dm-grid">
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" alt="Marketing Strategy" class="card-img">
+          <div class="dm-content">
+            <h3>Marketing Strategy</h3>
+            <p>Data-driven roadmaps and funnel-first planning built to align channels and target high-value enterprise growth.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Search Engine Optimization" class="card-img">
+          <div class="dm-content">
+            <h3>Search Engine Optimization</h3>
+            <p>Technical audits, intent-driven keyword research, and site architecture optimized for top search rankings.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Paid Media" class="card-img">
+          <div class="dm-content">
+            <h3>Paid Media</h3>
+            <p>High-ROI programmatic, social, and search ad campaigns meticulously optimized to lower customer acquisition costs.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80" alt="Email Marketing & Automation" class="card-img">
+          <div class="dm-content">
+            <h3>Email Marketing & Automation</h3>
+            <p>Targeted lifecycle sequences, segmentation, and automated workflows designed to nurture leads and boost lifetime value.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&w=800&q=80" alt="Social Media Marketing" class="card-img">
+          <div class="dm-content">
+            <h3>Social Media Marketing</h3>
+            <p>Engaging storytelling, consistent scheduling, and community management built to foster deep brand loyalty.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Conversion Rate Optimization" class="card-img">
+          <div class="dm-content">
+            <h3>Conversion Rate Optimization</h3>
+            <p>Continuous funnel testing and UX refinements to maximize visitor conversions across every touchpoint.</p>
+          </div>
+        </div>
+        <div class="dm-card">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="Custom Web Design" class="card-img">
+          <div class="dm-content">
+            <h3>Custom Web Design</h3>
+            <p>Lightning-fast, mobile-first, and visually stunning web experiences engineered specifically for high conversions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Digital Trends Section -->
+  <section id="trends" class="digital-trends-section">
+    <div>
+      <div class="section-title">
+        <h2>Emerging Digital Trends</h2>
+        <p>Staying ahead of the curve with next-generation technologies, AI integration, and evolving consumer interaction models.</p>
+      </div>
+      <div class="trends-grid">
+        <div class="trend-card">
+          <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80" alt="AI-Driven Personalization" class="card-img">
+          <div class="trend-content">
+            <span class="trend-tag">AI-Driven Personalization</span>
+            <h3>Hyper-Targeted Experiences</h3>
+            <p>Leveraging machine learning models to dynamically tailor content, messaging, and product recommendations in real-time for every user journey.</p>
+          </div>
+        </div>
+        <div class="trend-card">
+          <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80" alt="Spatial & 3D Web Engagement" class="card-img">
+          <div class="trend-content">
+            <span class="trend-tag">Immersive & Interactive</span>
+            <h3>Spatial & 3D Web Engagement</h3>
+            <p>Transitioning from flat static interfaces to interactive 3D product previews and spatial layouts that drastically elevate user retention.</p>
+          </div>
+        </div>
+        <div class="trend-card">
+          <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" alt="Generative Search Optimization" class="card-img">
+          <div class="trend-content">
+            <span class="trend-tag">Next-Gen Search</span>
+            <h3>Generative Search Optimization</h3>
+            <p>Adapting multi-channel content strategies for AI-powered answer engines and conversational search experiences to secure future-proof visibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Web Design Section -->
+  <section id="webdesign" class="web-design-section">
+    <div>
+      <div class="section-title">
+        <h2>High-Impact Web Design</h2>
+        <p>Immersive digital experiences, lightning-fast interfaces, and custom web architectures engineered for conversions.</p>
+      </div>
+      <div class="wd-grid">
+        <div class="wd-card">
+          <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Vanguard Architecture" class="wd-media">
+          <div class="wd-info">
+            <span class="wd-tag">UI/UX & Corporate Portals</span>
+            <h3>Vanguard Architecture</h3>
+            <p>Designed a high-performance interactive web presence paired with luxury client presentation portals.</p>
+            <div class="wd-metric">Impact: +180% Inquiries in Q1</div>
+          </div>
+        </div>
+        <div class="wd-card">
+          <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Lumina Fintech Group" class="wd-media">
+          <div class="wd-info">
+            <span class="wd-tag">Fintech Web Architecture</span>
+            <h3>Lumina Fintech Group</h3>
+            <p>Engineered a custom financial web platform featuring interactive user dashboards and secure client areas.</p>
+            <div class="wd-metric">Impact: Secured $12M Series A Funding</div>
+          </div>
+        </div>
+        <div class="wd-card">
+          <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="Stellar Wearables" class="wd-media">
+          <div class="wd-info">
+            <span class="wd-tag">E-Commerce Platforms</span>
+            <h3>Stellar Wearables Store</h3>
+            <p>Built a lightning-fast Shopify Plus storefront with immersive 3D product previews and streamlined checkout.</p>
+            <div class="wd-metric">Impact: 100k+ Active Community Members</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Clients Section -->
+  <section id="clients" class="clients-section">
+    <div>
+      <div class="section-title">
+        <h2>Our Valued Clients</h2>
+        <p>We partner with forward-thinking enterprises, industry leaders, and high-growth brands across sectors.</p>
+      </div>
+      <div class="clients-grid">
+        <div class="client-card">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80" alt="Apex Global Logistics" class="card-img">
+          <div class="client-card-content">
+            <span class="client-industry">Global Logistics</span>
+            <h3>Apex Global Logistics</h3>
+            <p>Partnered on international brand standards, digital PR, and multi-market digital campaigns across 14 global offices.</p>
+          </div>
+        </div>
+        <div class="client-card">
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Kinetix Health Partners" class="card-img">
+          <div class="client-card-content">
+            <span class="client-industry">Healthcare Partners</span>
+            <h3>Kinetix Health Partners</h3>
+            <p>Provided patient-centric portal architecture, local search optimization, and reputation management systems.</p>
+          </div>
+        </div>
+        <div class="client-card">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="PrimeEstate Properties" class="card-img">
+          <div class="client-card-content">
+            <span class="client-industry">Luxury Real Estate</span>
+            <h3>PrimeEstate Properties</h3>
+            <p>Executed high-end visual branding and hyper-targeted geo-fenced social campaigns for exclusive real estate listings.</p>
+          </div>
+        </div>
+        <div class="client-card">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="Veritas Consulting" class="card-img">
+          <div class="client-card-content">
+            <span class="client-industry">Advisory & Consulting</span>
+            <h3>Veritas Consulting</h3>
+            <p>Developed authoritative corporate web presence, interactive advisory modules, and streamlined client intake workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Case Studies Section -->
+  <section id="cases" class="case-studies-section">
+    <div>
+      <div class="section-title">
+        <h2>Successful Case Studies</h2>
+        <p>Proven track record of driving monumental growth and engagement for our partners.</p>
+      </div>
+      <div class="case-grid">
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=800&q=80" alt="Apex Financial Group" class="card-img">
+          <div class="case-content">
+            <h3>Apex Financial Group</h3>
+            <p><strong>Challenge:</strong> Low online visibility and high customer acquisition costs in a competitive financial sector.</p>
+            <p><strong>Solution:</strong> Complete brand repositioning combined with targeted multi-channel performance advertising.</p>
+            <div class="case-stats">+240% Inbound Lead Growth | -35% CAC</div>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Vanguard Tech Solutions" class="card-img">
+          <div class="case-content">
+            <h3>Vanguard Tech Solutions</h3>
+            <p><strong>Challenge:</strong> Fragmented messaging and lack of structured engagement across digital channels.</p>
+            <p><strong>Solution:</strong> Crafted a refreshed visual identity system and executed a high-impact social media content strategy.</p>
+            <div class="case-stats">3.5x Social Engagement | 180% Pipeline Increase</div>
+          </div>
+        </div>
+        <div class="case-card">
+          <img src="https://images.unsplash.com/photo-1472851294608-062f824d29cc?auto=format&fit=crop&w=800&q=80" alt="Lumina Retail Brands" class="card-img">
+          <div class="case-content">
+            <h3>Lumina Retail Brands</h3>
+            <p><strong>Challenge:</strong> Stagnant e-commerce conversions and poor retention through organic channels.</p>
+            <p><strong>Solution:</strong> Developed full-funnel lifecycle marketing campaigns and optimized performance creative assets.</p>
+            <div class="case-stats">+310% E-Commerce ROAS | 45% Repeat Buyer Lift</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Contact Modal Overlay -->
+<div id="strategyModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="modal-close">&times;</button>
+    <h3 id="modalTitle">Book Your Strategy Call</h3>
+    <p id="modalDesc">Fill out the form below and our team will get back to you within 24 hours.</p>
+    <form id="strategyForm" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted.'); closeModal();">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label for="email">Business Email</label>
+        <input type="email" id="email" required placeholder="john@company.com">
+      </div>
+      <div class="form-group" id="serviceGroup">
+        <label for="service">Interested Service</label>
+        <select id="service">
+          <option>Digital Marketing</option>
+          <option>Web Design</option>
+          <option>Brand Strategy</option>
+        </select>
+      </div>
+      <button type="submit" class="cta-btn" id="modalSubmitBtn" style="width: 100%; border: none;">Submit Request</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  /* --- Hamburger Menu Toggle --- */
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mainNav = document.getElementById('mainNav');
+  const navDropdowns = document.querySelectorAll('nav ul li.dropdown');
+  const allNavLinks = document.querySelectorAll('nav a');
+
+  hamburgerBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+    hamburgerBtn.classList.toggle('active');
+  });
+
+  // Responsive dropdown toggle on click (mobile & touch devices)
+  navDropdowns.forEach(drop => {
+    const parentLink = drop.querySelector('a');
+    parentLink.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        // Close other open dropdowns
+        navDropdowns.forEach(other => {
+          if (other !== drop) other.classList.remove('mobile-open');
+        });
+        drop.classList.toggle('mobile-open');
+      }
+    });
+  });
+
+  // Close mobile nav when clicking any actual link (sub-item or regular link)
+  allNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const parentLi = link.parentElement;
+      // If it's a mobile dropdown parent click, let the dropdown toggle handler take over
+      if (window.innerWidth <= 1024 && parentLi.classList.contains('dropdown') && link.getAttribute('href').startsWith('#') && parentLi.querySelector('.dropdown-menu')) {
+        // Handled by dropdown click listener above
+        return;
+      }
+
+      // Otherwise close mobile navigation overlay
+      if (window.innerWidth <= 1024) {
+        mainNav.classList.remove('active');
+        hamburgerBtn.classList.remove('active');
+        navDropdowns.forEach(d => d.classList.remove('mobile-open'));
+      }
+    });
+  });
+
+  /* --- 45-Slide Carousel Auto-Changing Every 5 Seconds --- */
+  let currentSlideIndex = 0;
+  const slides = document.querySelectorAll('.slide-item');
+
+  function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active-slide'));
+    if (index >= slides.length) currentSlideIndex = 0;
+    if (index < 0) currentSlideIndex = slides.length - 1;
+    slides[currentSlideIndex].classList.add('active-slide');
+  }
+
+  function nextSlide() {
+    currentSlideIndex++;
+    showSlide(currentSlideIndex);
+  }
+
+  function prevSlide() {
+    currentSlideIndex--;
+    showSlide(currentSlideIndex);
+  }
+
+  setInterval(() => {
+    nextSlide();
+  }, 5000);
+
+  /* --- Modal Script & Interactivity for Pay Now & Client Login --- */
+  const modal = document.getElementById('strategyModal');
+  const modalTitle = document.getElementById('modalTitle');
+  const modalDesc = document.getElementById('modalDesc');
+  const serviceGroup = document.getElementById('serviceGroup');
+  const modalSubmitBtn = document.getElementById('modalSubmitBtn');
+
+  const ctaButtons = document.querySelectorAll('a[href="#contact"], .cta-btn');
+  const closeBtn = document.querySelector('.modal-close');
+  const payNowBtn = document.getElementById('payNowBtn');
+  const clientLoginBtn = document.getElementById('clientLoginBtn');
+
+  // Strategy Call Modal
+  ctaButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      modalTitle.textContent = "Book Your Strategy Call";
+      modalDesc.textContent = "Fill out the form below and our team will get back to you within 24 hours.";
+      serviceGroup.style.display = "block";
+      modalSubmitBtn.textContent = "Submit Request";
+      modal.classList.add('active');
+    });
+  });
+
+  // Pay Now Interactive Modal
+  payNowBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalTitle.textContent = "Secure Invoice Payment";
+    modalDesc.textContent = "Enter your billing details and invoice reference to process your payment.";
+    serviceGroup.style.display = "none";
+    modalSubmitBtn.textContent = "Proceed to Payment";
+    modal.classList.add('active');
+  });
+
+  // Client Login Interactive Modal
+  clientLoginBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalTitle.textContent = "Client Portal Login";
+    modalDesc.textContent = "Sign in to access your project dashboard, reports, and communications.";
+    serviceGroup.style.display = "none";
+    modalSubmitBtn.textContent = "Sign In";
+    modal.classList.add('active');
+  });
+
+  function closeModal() {
+    modal.classList.remove('active');
+  }
+
+  closeBtn.addEventListener('click', closeModal);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeModal();
+  });
+</script>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-grid">
+      <!-- Col 1: About Brand -->
+      <div class="footer-col">
+        <h4>EquivoraDigital</h4>
+        <p>Award-winning digital marketing and branding agency accelerating growth through strategic SEO, performance PPC, social media management, and high-impact web design.</p>
+        <div class="footer-social-icons">
+          <!-- X (Twitter) -->
+          <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="X">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <!-- Facebook -->
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="YouTube">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="TikTok">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#FE2C55"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.22-2.45.62-4.91 2.3-6.68 1.55-1.62 3.79-2.52 6.02-2.43.12.01.24.02.36.04v4.05c-.32-.11-.66-.17-1-.18-1.07-.05-2.14.42-2.79 1.25-.61.76-.78 1.78-.46 2.7.32.92 1.14 1.58 2.12 1.72.97.14 2.01-.15 2.63-.91.31-.38.48-.86.49-1.35.03-3.03.02-6.07.03-9.11 0-2.03-.01-4.06.01-6.09z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0A66C2"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Quick Navigation -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home & Overview</a></li>
+          <li><a href="#about">About Our Agency</a></li>
+          <li><a href="#branding">Strategic Branding</a></li>
+          <li><a href="#trends">Emerging Trends</a></li>
+          <li><a href="#clients">Our Valued Clients</a></li>
+          <li><a href="#cases">Success Case Studies</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Core Services -->
+      <div class="footer-col">
+        <h4>Core Services</h4>
+        <ul>
+          <li><a href="#marketing">Search Engine Optimization</a></li>
+          <li><a href="#marketing">Paid Media & PPC Ads</a></li>
+          <li><a href="#marketing">Email & Automation</a></li>
+          <li><a href="#marketing">Social Media Marketing</a></li>
+          <li><a href="#webdesign">Custom Web Architecture</a></li>
+          <li><a href="#branding">Brand Positioning</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact & Location -->
+      <div class="footer-col">
+        <h4>Headquarters</h4>
+        <p>4 Hillcrest Drive<br>Stafford-Springs, CT 06076</p>
+        <p><strong>Phone:</strong> (571) 484-2138<br><strong>Email:</strong> info@equivoradigital.com</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 EquivoraDigital. All rights reserved.</p>
+      <div class="footer-policy-links">
+        <a href="#sitemap">Site Map</a> <span>•</span> <a href="#privacy">Privacy Policy</a> <span>•</span> <a href="#disclaimer">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
